@@ -9,19 +9,21 @@ const Navigation = () =>{
       
             {/* Navigation Bar */}
           <nav className = "navbar navbar-expand-lg navbar-dark fixed-top " >
-             <div className="row">
-              <img className=" logo" src = {logo} />
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div className="container">
+              <div className="row">
+                <img className=" logo" src = {logo} />
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
-              </button>
+                </button>
+              </div>
               <div role = "navigation" >
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     < ul className = "navlinkBar navbar-nav mr-auto" >
-                        <li className="nav-item"><a className="nav-link"  href = '/home'>Home</a></li>
-                        <li className="nav-item"><a className="nav-link"  href = '/about'>About       </a></li>
-                        <li className="nav-item"><a className="nav-link"  href = '/services'>Services    </a></li>
-                        <li className="nav-item"><a className="nav-link"  href = '/portfolio'>Portfolio   </a></li>
-                        <li className="nav-item"><a className="nav-link"  href = '/team'>Team        </a></li>
+                        <li className="nav-item"><a className="nav-link scrollto active"  href = '/home'>Home</a></li>
+                        <li className="nav-item"><a className="nav-link scrollto"  href = '/about'>About       </a></li>
+                        <li className="nav-item"><a className="nav-link scrollto"  href = '/services'>Services    </a></li>
+                        <li className="nav-item"><a className="nav-link scrollto"  href = '/portfolio'>Portfolio   </a></li>
+                        <li className="nav-item"><a className="nav-link scrollto"  href = '/team'>Team        </a></li>
                         <li className = "nav-item " >
                             <div className="dropdown">
                                 <button className="nav-link dropbtn">DropDown    
@@ -52,8 +54,8 @@ const Navigation = () =>{
 
 
 
-                         <li className="nav-item"><a className="nav-link"  href = '/contact'>Contact     </a></li>
-                        <li className="nav-item "><a className ="nav-link getstarted" href = '/getstarted'>  
+                         <li className="nav-item"><a className="nav-link  scrollto"  href = '/contact'>Contact     </a></li>
+                        <li className="nav-item "><a className ="nav-link scrollto" id = "getstarted" href = '/getstarted'>  
                            <GetStartedButton buttonType= "transparent" />
                            </a> </li> 
                     </ul>

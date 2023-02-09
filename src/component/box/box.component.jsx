@@ -6,9 +6,8 @@ import "./box.styles.scss";
 const Box = () =>{
     return(
         <div className="box">
-            
             <Container />
-            {/* <Client /> */}
+            <Client />
         </div>
     );
 }
