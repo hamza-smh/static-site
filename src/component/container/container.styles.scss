@@ -1,6 +1,6 @@
 $light-color: #f8f8f8;
-//$theme: rgb(70, 105, 145);
-$theme :rgb(55, 81, 126);
+$theme: #37517e;
+$theme2 :rgb(39, 74, 134);
 $blue : #449dd4;
 
 .contain{
@@ -20,6 +20,7 @@ $blue : #449dd4;
   top:35px;
   overflow: hidden;
   padding :100px 60px 40px 60px;
+  
 }
 h1{
     font-size: 46px;
@@ -33,12 +34,14 @@ h2{
 .text-holder{
   width : 100%;
   margin-top: 80px;
+
 }
 .img-hero{
     width: 500px;
     height: 500px;
     animation-name: float;
     
+      
     
 }
 

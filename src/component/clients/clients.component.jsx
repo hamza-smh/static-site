@@ -25,7 +25,8 @@ const Client = () => {
             <section id="clients" className="clients section-bg">
                 <div className="trail" data-aos="zoom-in">
                     {allClients.map((item,index) =>(
-                        < div className = "brand-names col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" >
+                        // < div className = "brand-names col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            < div className = "brand-names">
                             <img src={allClients[index].client} className="img-fluid" alt= "" />
                         </div>
                     ))}
