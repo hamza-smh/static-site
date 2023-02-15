@@ -1,4 +1,5 @@
 import "./about.styles.scss";
+import SectionTitle from "../section-title/section-title.component";
 
 const AboutUs = () => {
 return(
@@ -6,13 +7,10 @@ return(
        <section id="about" className="about">
                 <div className="about-container" data-aos="fade-up">
 
-                    <div className="section-title">
-                        <h2>About Us</h2>
-                    </div>
+                    <SectionTitle title = "About Us" />
 
                     <div className="row content">
                          < div  className = "col-lg-6"> 
-                        
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                                 magna aliqua.

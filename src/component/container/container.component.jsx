@@ -1,11 +1,8 @@
 import "./container.styles.scss";
 import hero from "F:/AMProtocol/project/my-app/src/brand/assets/img/hero.png";
 import GetStartedButton from "../get-started-button/getStartedbutton";
- import ReactDOM from 'react-dom'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap-icons/font/bootstrap-icons.css';
- import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
- import {faCoffee} from '@fortawesome/free-solid-svg-icons';
 import Navigation from "../navigation/navigation";
 
 const Container = () => {

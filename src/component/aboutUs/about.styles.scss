@@ -5,62 +5,21 @@ section {
 .section-bg {
     background-color: #f3f5fa;
 }
-
-
-.section-title {
-  text-align: center;
-  padding-bottom: 30px;
-  width: 1110px;
-  display: block;
-}
-
-.section-title h2 {
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-  color: #37517e;
-}
-
-.section-title h2::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 120px;
-  height: 1px;
-  background: #ddd;
-  bottom: 1px;
-  left: calc(50% - 60px);
-}
-
-.section-title h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 3px;
-  background: #47b2e4;
-  bottom: 0;
-  left: calc(50% - 20px);
-}
-
-.section-title p {
-  margin-bottom: 0;
-  height :500px
-}
-.about-container{
-  height: 300px;
-  padding : 0px 0px;
-  
-  
-}
-
-
 .about{
   padding : 70px 100px;
   justify-content: center;
+}
+.about-container{
+  height: fit-content;
+  padding : 0px 20px; 
+  overflow: hidden;
+}
+.about .content{
+  height: 180px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin :0px;
 }
 
 .about .content h3 {
@@ -116,4 +75,51 @@ section {
   background: #47b2e4;
   color: #fff;
   text-decoration: none;
+}
+
+
+
+
+@media (max-width: 991px){
+
+.about{
+  padding : 70px 100px;
+  justify-content: center;
+}
+.about-container{
+  height: fit-content;
+  padding : 0px 20px; 
+  overflow: hidden;
+}
+.about .content{
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin :0px;
+}
+
+
+}
+
+
+@media (max-width: 768px) {
+  
+.about{
+  padding : 60px;
+  justify-content: center;
+}
+.about-container{
+  height: fit-content;
+  padding : 0px 20px; 
+  overflow: hidden;
+}
+.about .content{
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin :0px;
+}
+
 }
