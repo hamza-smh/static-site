@@ -4,6 +4,8 @@ import logo from 'F:/AMProtocol/project/my-app/src/brand/logo_transparent.png';
 import "./navigation.styles.scss";
 import NavLinkBar from "./NavLinkBar/navLinkBar.component";
 
+import NavToggleButton from "./NavToggle/navtoggle.component";
+
 
 
 
@@ -26,11 +28,13 @@ const Navigation = () =>{
               <div role = "navigation" >
                   <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <NavLinkBar />
-                     <i class="bi bi-list mobile-nav-toggle"></i> 
+                    {/* <i className="bi bi-list mobile-nav-toggle"></i>  */}
+                    <NavToggleButton />
                   </div>
               </div> 
             </div>  
           </nav>  
+          
       </>
     );
 }
