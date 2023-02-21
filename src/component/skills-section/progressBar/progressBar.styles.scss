@@ -1,0 +1,66 @@
+
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #37517e;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: #e8edf5;
+  height: 10px;
+}
+
+$init : 0%;
+$final : 50%;
+
+#bar1{
+  $final:100%;
+  width: $final;
+}
+#bar2{
+  $final:90%;
+  width: $final;
+}
+#bar3{
+  $final:75%;
+  width: $final;
+}
+#bar4{
+  $final:55%;
+  width: $final;
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  background-color: #4668a2;
+  transition: 5s;
+  // transform: grow(40%);
+  animation: progression 2s linear;
+  
+}
+
+@keyframes progression {
+  from {
+    width :0% 
+  }
+  to {
+    width: $final
+  }
+}

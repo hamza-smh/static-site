@@ -1,3 +1,4 @@
+import ProgressBar from "./progressBar/progressBar.component";
 import "./skills.styles.scss";
 import skills from "F:/AMProtocol/project/my-app/src/brand/assets/img/skills.png"
 const SkillSection = () => {
@@ -20,33 +21,10 @@ const SkillSection = () => {
 
                             <div class="skills-content">
 
-                                <div class="progress">
-                                    <span class="skill">HTML <i class="val">100%</i></span>
-                                    <div class="progress-bar-wrap">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-
-                                <div class="progress">
-                                    <span class="skill">CSS <i class="val">90%</i></span>
-                                    <div class="progress-bar-wrap">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-
-                                <div class="progress">
-                                    <span class="skill">JavaScript <i class="val">75%</i></span>
-                                    <div class="progress-bar-wrap">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-
-                                <div class="progress">
-                                    <span class="skill">Photoshop <i class="val">55%</i></span>
-                                    <div class="progress-bar-wrap">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
+                                <ProgressBar id="bar1" title= "HTML" val = "100"/>
+                                <ProgressBar id="bar2" title= "CSS"  val = "90"/>
+                                <ProgressBar id="bar3" title= "Javascript" val = "75"/>
+                                <ProgressBar id="bar4" title= "Photoshop" val = "55"/>
 
                             </div>
 
