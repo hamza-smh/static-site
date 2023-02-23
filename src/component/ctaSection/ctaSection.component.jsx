@@ -16,8 +16,6 @@ const CTASection = () =>{
                     </div>
                 </div>
             </section>
-            <br />
-            <br />
         </>
     )
 }
