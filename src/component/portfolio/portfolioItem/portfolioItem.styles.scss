@@ -1,15 +1,16 @@
 
+
+
 .portfolio .portfolio-item {
-  height : fit-content;
   padding: 0px 10px;
   overflow: hidden;
   margin-bottom : 30px;
-  
+  display:inline-flexbox
+
 }
 
 .portfolio .portfolio-item .portfolio-img {
-  height: 100%;
-  margin: 0px;
+  //margin: 0px;
   overflow: hidden;
 
   
@@ -29,14 +30,18 @@
 
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
-  position: absolute;
-  left: 15px;
-  bottom: 0;
+  position: relative;
+  //left: 15px;
+  bottom: 63px;
+  //right: 15px;
+  width: 100%;
+  height: 100%;
   z-index: 3;
-  right: 15px;
   transition: all 0.3s;
   background: rgba(55, 81, 126, 0.8);
   padding: 10px 15px;
+  //float:inherit;
+  display:flow-root;
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
