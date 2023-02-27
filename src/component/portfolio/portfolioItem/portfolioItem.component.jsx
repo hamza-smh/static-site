@@ -2,7 +2,8 @@ import "./portfolioItem.styles.scss";
 
 const PortfolioItem = ({displayImage,groupTitle,group}) =>{
     return(
-        <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+        // <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div className=" portfolio-item filter-app">    
             <div className="portfolio-img"><img src={displayImage} className="img-fluid" alt=""/></div>
             <div className="portfolio-info">
                 <h4>{groupTitle}</h4>

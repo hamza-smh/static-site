@@ -1,23 +1,30 @@
 
 .portfolio .portfolio-item {
-  margin-bottom: 30px;
   height : fit-content;
-  width: min-content;
+  padding: 0px 10px;
+  overflow: hidden;
+  margin-bottom : 30px;
   
 }
 
 .portfolio .portfolio-item .portfolio-img {
-  overflow: hidden;
   height: 100%;
-  width: 200%;
+  margin: 0px;
+  overflow: hidden;
+
   
 }
 
 .portfolio .portfolio-item .portfolio-img img {
   transition: all 0.6s;
   filter: grayscale(0);
-  width: fit-content;
+  max-width: 100%;
+  padding: 0px;
   
+  &:hover{
+    transform: scale(1.1);
+    transition: all 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  }
 }
 
 .portfolio .portfolio-item .portfolio-info {

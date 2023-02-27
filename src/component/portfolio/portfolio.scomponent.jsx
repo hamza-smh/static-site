@@ -35,21 +35,18 @@ const Portfolio = () => {
                     </ul>
 
                     <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-<Fragment className = "item-row">
+
                         <PortfolioItem displayImage={App1} groupTitle= "App1" group="App"/>
-                        <PortfolioItem displayImage={Web3} groupTitle= "Web3" group="Web"/>
-                        <PortfolioItem displayImage={App2} groupTitle= "App2" group="App"/>
-</Fragment>
-<Fragment className = "item-row">
                         <PortfolioItem displayImage={App3} groupTitle= "App3" group="App"/>                                                
+                        <PortfolioItem displayImage={Web3} groupTitle= "Web3" group="Web"/>
                         <PortfolioItem displayImage={Web2} groupTitle= "Web2" group="Web"/>
-                        <PortfolioItem displayImage={Card2} groupTitle= "Card2" group="Card"/>
-</Fragment>                      
-<Fragment className = "item-row">
-                        <PortfolioItem displayImage={Card1} groupTitle= "Card1" group="Card"/>
                         <PortfolioItem displayImage={Web1} groupTitle= "Web1" group="Web"/>
+                        <PortfolioItem displayImage={App2} groupTitle= "App2" group="App"/>
+                        <PortfolioItem displayImage={Card2} groupTitle= "Card2" group="Card"/>
+                        <PortfolioItem displayImage={Card1} groupTitle= "Card1" group="Card"/>
                         <PortfolioItem displayImage={Card3} groupTitle= "Card3" group="Card"/>
-</Fragment>
+                        
+
 
 
                         {/* <div className="col-lg-4 col-md-6 portfolio-item filter-app">

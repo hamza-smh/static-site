@@ -1,14 +1,19 @@
 .portfolio .container{
   display: flex;
   flex-direction: column;
-  height: 2000px;
+  height: fit-content;
+  flex-wrap: wrap;
+  align-items: stretch;
   
 }
 
 .portfolio-container{
-  height: 1500px;
-  display: flex;
-  float: none;
+  height: fit-content;
+  width: 101.4%;
+  padding-bottom: 20px;
+  column-count: 3;
+  column-gap: 0px;
+  column-width: 220px;
   
 }
 
