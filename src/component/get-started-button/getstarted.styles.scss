@@ -6,13 +6,13 @@ $skyblue : #007ac6;
 
 .button{
     border-radius: 25px;
-    width : 120px;
+    width : 130px;
     margin: 0px 0px 0px 20px;
-    padding: 5px 5px;
+    padding: 7px 10px;
     font-size: 16px;
     font-weight: 500;
     transition-duration: 0.2s;
-    border: 3px solid $blue;
+    border: 2px solid $blue;
     transition-duration: 0.4s;  
     
 
@@ -30,6 +30,17 @@ $skyblue : #007ac6;
       border: none;
     }
   }
+    &.transblue {
+      background-color: transparent;
+      color: $blue;
+
+    &:hover {
+      background-color: $blue;
+      color:$light-color;
+      border: none;
+    }
+  }
+
 
   &.inverted {
     background-color: $blue;

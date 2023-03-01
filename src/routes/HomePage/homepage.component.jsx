@@ -8,6 +8,10 @@ import SkillSection from "../../component/skills-section/skills.component";
 import Services from "../../component/servicesSection/services.component";
 import CTASection from "../../component/ctaSection/ctaSection.component";
 import Portfolio from "../../component/portfolio/portfolio.scomponent";
+import Team from "../../component/team/team.component";
+import Pricing from "../../component/pricing/pricing.component";
+import FAQ from "../../component/faq/faq.component";
+import Contact from "../../component/contact/contact.component";
 
 const HomePage =() =>{
     return(
@@ -20,6 +24,10 @@ const HomePage =() =>{
             <Services />
             <CTASection />
             <Portfolio />
+            <Team />
+            <Pricing />
+            <FAQ />
+            <Contact />
         </>
     )
 }

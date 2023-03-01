@@ -1,12 +1,7 @@
-
-
-
 .portfolio .portfolio-item {
   padding: 0px 10px;
   overflow: hidden;
   margin-bottom : 30px;
-  display:inline-flexbox
-
 }
 
 .portfolio .portfolio-item .portfolio-img {
@@ -41,7 +36,7 @@
   background: rgba(55, 81, 126, 0.8);
   padding: 10px 15px;
   //float:inherit;
-  display:flow-root;
+  
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
