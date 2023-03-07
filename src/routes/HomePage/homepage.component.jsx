@@ -12,6 +12,7 @@ import Team from "../../component/team/team.component";
 import Pricing from "../../component/pricing/pricing.component";
 import FAQ from "../../component/faq/faq.component";
 import Contact from "../../component/contact/contact.component";
+import Footer from "../../component/footer/footer.component";
 
 const HomePage =() =>{
     return(
@@ -28,6 +29,7 @@ const HomePage =() =>{
             <Pricing />
             <FAQ />
             <Contact />
+            <Footer />
         </>
     )
 }
