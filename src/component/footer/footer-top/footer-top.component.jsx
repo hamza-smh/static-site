@@ -43,12 +43,7 @@ const FooterTop = () => {
                                                     <h4>Our Social Networks</h4>
                                                     <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
                                                     <div className="social-links mt-3">
-                                                        {/* <a href="#" className="twitter"><i className="bx bxl-twitter"></i></a>
-                                                        <a href="#" className="facebook"><i className="bx bxl-facebook"></i></a>
-                                                        <a href="#" className="instagram"><i className="bx bxl-instagram"></i></a>
-                                                        <a href="#" className="google-plus"><i className="bx bxl-skype"></i></a>
-                                                        <a href="#" className="linkedin"><i className="bx bxl-linkedin"></i></a> */}
-
+                                                        
                                                         <a href=""><FaTwitter classname="img-fluid" /></a>
                                                         <a href=""><FaFacebookF classname="img-fluid" /></a>
                                                         <a href=""><FaInstagram classname="img-fluid" /></a>
