@@ -1,5 +1,6 @@
 import "./about.styles.scss";
 import SectionTitle from "../section-title/section-title.component";
+import  Checks  from "./checks/checks.components";
 
 const AboutUs = () => {
 return(
@@ -10,15 +11,16 @@ return(
                     <SectionTitle title = "About Us" />
 
                     <div className="row content">
-                         < div  className = "col-lg-6"> 
+                         < div  className = "col-lg-6">  
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                                 magna aliqua.
                             </p>
                             <ul>
-                                <li><i className="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-                                <li><i className="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-                                <li><i className="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+                                <Checks text="Ullamco laboris nisi ut aliquip ex ea commodo consequat" />
+                                <Checks text="Duis aute irure dolor in reprehenderit in voluptate velit" />
+                                <Checks text="Ullamco laboris nisi ut aliquip ex ea commodo consequat" />
+
                             </ul>
                         </div>
                         <div className="col-lg-6 pt-4 pt-lg-0">
