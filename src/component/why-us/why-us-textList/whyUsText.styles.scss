@@ -1,20 +1,14 @@
-.why-us .accordion-list {
-  padding: 0 100px 58px 100px;
-}
 
-.why-us .accordion-list ul {
-  padding: 0;
-  list-style: none;
-}
-
-.why-us .accordion-list li+li {
-  margin-top: 15px;
-}
+// .why-us .accordion-list li+li {
+//   margin-top: 15px;
+// }
 
 .why-us .accordion-list li {
   padding: 20px;
+  width: fit-content;
   background: #fff;
   border-radius: 4px;
+  display: block;
 }
 
 .why-us .accordion-list a {

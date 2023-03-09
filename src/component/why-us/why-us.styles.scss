@@ -1,5 +1,14 @@
 .why-us .content {
-  padding: 60px 100px 0 100px;
+  max-height: 100%;
+  padding: 40px 100px 0 100px;
+}
+.whyUsTextBlock{
+  padding: 0px 100px;
+}
+
+.why-us-text{
+  display:flex;
+  flex-direction: column;
 }
 
 .why-us .content h3 {
@@ -26,7 +35,9 @@
 }
 
 
-
+.img-holder{
+  align-items: stretch;
+}
 
 
 .container-fluid{
@@ -46,7 +57,9 @@
   padding: 0px;
   
 }
-
+.accordion-list{
+  padding-bottom: 74px;
+}
 
 @media (max-width: 1024px) {
 
