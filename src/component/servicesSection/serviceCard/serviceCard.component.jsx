@@ -1,10 +1,14 @@
 import "./serviceCard.styles.scss";
 
-const ServiceCard = ({icon,title,text}) =>{
+const ServiceCard = ({data,index}) =>{
+
+    const {title,icon,text}=data;
     return(
-        <div className="card col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+        <div className="card col-xl-3 col-md-6 ">
             <div className="icon-box">
-                <div className="icon"><i className={icon}></i></div>
+                <div className="icon">
+                    <i>{icon}</i>
+                </div>
                 <h4><a href="">{title}</a></h4>
                 <p>{text}</p>
             </div>

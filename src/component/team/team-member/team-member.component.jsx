@@ -1,7 +1,9 @@
 import "./team-member.styles.scss";
 import {FaTwitter , FaFacebookF , FaInstagramSquare,FaLinkedin} from 'react-icons/fa';
 
-const TeamMember = ({member,name,post,about}) =>{
+const TeamMember = ({data,index}) =>{
+    const {member,name,post,about} = data;
+    
     return(
     //    <div className="member-container col-lg-6">
     < div className = "member-container col-lg-6" >
