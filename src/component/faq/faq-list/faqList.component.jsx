@@ -9,7 +9,8 @@ const FaqList =({data, selected,setSelected,index})=>{
         <li className="faq-question">
             <a className="slider">
                     <span className="cover">
-                        <BsQuestionCircle className="mark"/>
+                        <BsQuestionCircle className="mark"/>  
+                        {/* comment */}
                         {outerText}
                     </span>
 
