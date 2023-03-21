@@ -10,11 +10,14 @@
 
 .faq .faq-list {
   padding: 0 100px;
+  width: 100%;
 }
 
 .faq .faq-list ul {
   padding: 0;
   list-style: none;
+  width: 100%;
+  
 }
 
 .faq .faq-list li+li {
@@ -35,7 +38,8 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  padding: 0 30px;
+  //padding: 0 30px;
+  color: #47b2e4;
   outline: none;
   cursor: pointer;
 }

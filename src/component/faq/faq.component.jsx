@@ -41,14 +41,13 @@ const FAQ = () => {
                     <div class="faq-list">
                         <ul>
 
- {
+                        {
                             data?.map((item,index)=>
                             <FaqList
                                 selected={selected}
                                 setSelected={setSelected} 
                                 data={item}
                                 index={index} 
-                                key={index}
                             />
                         )}
 

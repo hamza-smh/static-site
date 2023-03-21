@@ -13,14 +13,14 @@ const FaqList =({data, selected,setSelected,index})=>{
                         {outerText}
                     </span>
 
-                   {/* <ChevronIcon>
-                    <SliderIconButton onClick = {() => setSelected(index)}>
-                        <SliderIcon selected={selected} index={index}/>
-                    </SliderIconButton>
-                </ChevronIcon>
+                <span>
+                    <button onClick = {() => setSelected(index)}>
+                        <i selected={selected} index={index}/>
+                    </button>
+                </span>   
                  {
                     selected===index ? <p>{innerText}</p> : null
-                }  */}
+                }  
               
             </a>
             
