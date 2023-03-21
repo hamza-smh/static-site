@@ -12,7 +12,7 @@ return(
             <div className="text-holder">
                 <h1>Building Cutting Edge SaaS Solutions</h1>
                 <h2>We are team of talented technology enthusiasts helping business with digital automation</h2>
-                <div className="links d-flex  justify-content-lg-start">
+                <div className="links">
                     < GetStartedButton buttonType = "inverted" href="#about" />
                    
                     <div className="watchVideo">

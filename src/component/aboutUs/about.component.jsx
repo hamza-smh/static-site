@@ -16,7 +16,7 @@ return(
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                                 magna aliqua.
                             </p>
-                            <ul>
+                            <ul className="checklist">
                                 <Checks text="Ullamco laboris nisi ut aliquip ex ea commodo consequat" />
                                 <Checks text="Duis aute irure dolor in reprehenderit in voluptate velit" />
                                 <Checks text="Ullamco laboris nisi ut aliquip ex ea commodo consequat" />

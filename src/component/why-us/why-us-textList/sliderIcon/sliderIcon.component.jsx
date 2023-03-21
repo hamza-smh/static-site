@@ -1,16 +1,15 @@
-import { useContext } from 'react';
+import {useContext} from 'react';
 import {BiChevronUp,BiChevronDown} from 'react-icons/bi';
-import { WhyUsContext } from '../../../../contexts/whyus.context';
+//import {WhyUsContext} from '../../../../context/whyus.context';
 
-const SliderIcon = () => {
+const SliderIcon = ({selected,index}) => {
     
-    const {isSliderOpen , setIsSliderOpen} = useContext(WhyUsContext);
-    const toggleIsSliderOpen = () => setIsSliderOpen(!isSliderOpen); 
 
-    return(
-        <div className='slider-icon' onClick={toggleIsSliderOpen}>
-            {isSliderOpen? <BiChevronDown /> : <BiChevronUp />}
-            
+    return ( 
+        <div className = 'slider-icon'>
+        {
+            selected === index ? < BiChevronUp /> : < BiChevronDown />
+        }
         </div>
     )
 }
