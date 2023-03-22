@@ -15,8 +15,8 @@ const FaqList =({data, selected,setSelected,index})=>{
                     </span>
 
                 <span>
-                    <button onClick = {() => setSelected(index)}>
-                        <i selected={selected} index={index}/>
+                    <button onClick = {() => setSelected(index)} selected={selected} index={index}>
+                            <BiChevronDown />
                     </button>
                 </span>   
                  {

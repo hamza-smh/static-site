@@ -31,17 +31,22 @@
   position: relative;
 }
 
-.faq .faq-list a {
-  display: block;
+.faq .faq-list .slider {
+  display: inline-flex;
   position: relative;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  //padding: 0 30px;
-  color: #47b2e4;
   outline: none;
   cursor: pointer;
+  width: 100%;
+  justify-content: space-between;
+  &:hover{
+
+     color: #47b2e4; 
+  }
+
 }
 
 .faq .faq-list .icon-help {
