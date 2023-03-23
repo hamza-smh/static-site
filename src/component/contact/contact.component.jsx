@@ -4,7 +4,7 @@ import "./contact.styles.scss";
 import {GoLocation} from "react-icons/go";
 import {AiOutlineMail} from "react-icons/ai";
 import {BsPhone} from "react-icons/bs";
-
+//kuch nahi bas yunhi
 
 const Contact = () =>{
 
