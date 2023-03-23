@@ -7,23 +7,6 @@ import {BsPhone} from "react-icons/bs";
 
 
 const Contact = () =>{
-
-const data = [{
-            title : "Location :",
-            icon : <GoLocation />,
-            info : "A108 Adam Street, New York, NY 535022"
-    },
-    {
-            title : "Email :",
-            icon : <AiOutlineMail />,
-            info : "info@example.com",
-    },
-    {
-        title : "Call :",
-        icon : <BsPhone />,
-        info : "+1 5589 55488 555",
-    }
-]
     return(
         <section id="contact" className="contact">
                 <div className="container" data-aos="fade-up">
@@ -38,22 +21,13 @@ const data = [{
                         <div className="aboutUs col-lg-5 d-flex align-items-stretch">
                             <div className="info">
 
-{
-                            data?.map((item,index)=>
-                            <InfoBox
-                                data={item}
-                                index={index}
-                            />)
-}
-
-
-                                {/* <InfoBox title ="Location :" icon = {<GoLocation /> }
+                                <InfoBox title ="Location :" icon = {<GoLocation /> }
                                     info = "A108 Adam Street, New York, NY 535022"/>
 
                                 <InfoBox title ="Email :" icon = {<AiOutlineMail />} info = "info@example.com"/>
 
                                 <InfoBox title ="Call :" icon = {<BsPhone />} info = "+1 5589 55488 555"/>
-                                 */}
+                                
 
                             
 

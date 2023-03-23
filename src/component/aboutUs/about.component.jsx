@@ -3,12 +3,6 @@ import SectionTitle from "../section-title/section-title.component";
 import  Checks  from "./checks/checks.components";
 
 const AboutUs = () => {
-
-    const checks = [
-         {text : "Ullamco laboris nisi ut aliquip ex ea commodo consequat"},
-         {text : "Duis aute irure dolor in reprehenderit in voluptate velit"},
-         {text : "Ullamco laboris nisi ut aliquip ex ea commodo consequat"}
-    ]
 return(
     <>
        <section id="about" className="about">
@@ -23,14 +17,9 @@ return(
                                 magna aliqua.
                             </p>
                             <ul className="checklist">
-
-                                   {
-                                    checks?.map((item,index)=>
-                                    <Checks
-                                        data = {item}
-                                        index={index}
-                                    />
-                                   )} 
+                                <Checks text="Ullamco laboris nisi ut aliquip ex ea commodo consequat" />
+                                <Checks text="Duis aute irure dolor in reprehenderit in voluptate velit" />
+                                <Checks text="Ullamco laboris nisi ut aliquip ex ea commodo consequat" />
 
                             </ul>
                         </div>

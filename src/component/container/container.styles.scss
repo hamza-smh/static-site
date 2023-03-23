@@ -10,6 +10,7 @@ $blue : #449dd4;
   padding: 0px 60px;
   justify-content: center;
   background-color: $theme;
+  
   display:grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -62,7 +63,6 @@ h2{
   color: #fff;
   line-height: 1.5;
   justify-content: center;
-  position: relative;
   span{
     font-size: 17px;
     margin-left: 10px;

@@ -1,15 +1,10 @@
 import "./infoBox.styles.scss";
-const InfoBox = ({data, index}) => {
-    const { icon,title,info} = data;
+const InfoBox = ({icon,title,info}) => {
     return(
         <div className="infoBox">
-            <span>
-                <i className="icon">{icon}</i>
-            </span>
-            <span>
-                <h4>{title}</h4>
-                <p>{info}</p>
-            </span>
+            <i className="icon">{icon}</i>
+            <h4>{title}</h4>
+            <p>{info}</p>
         </div>
     );
 }
