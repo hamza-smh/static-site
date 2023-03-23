@@ -15,6 +15,7 @@
 .yourInfo{
     display: flex;
     flex-direction: row;
+    
 }
 .contact .info {
   border-top: 3px solid #47b2e4;
@@ -24,6 +25,12 @@
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
 }
+.contact .aboutUser,
+.contact .infoHolder{
+  display: flex;
+  align-items: stretch;
+}
+
 
 
 .contact .info .social-links {

@@ -6,7 +6,7 @@ import SliderIcon from "./sliderIcon/sliderIcon.component";
 
 const WhyUsText = ({data, selected,setSelected,index}) =>{
 
-    const {textInside,textOutside,text} = data;
+    const {textInside,textOutside} = data;
     console.log({
         data,
         selected,

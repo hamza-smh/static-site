@@ -8,17 +8,19 @@ const FaqList =({data, selected,setSelected,index})=>{
     return(
         <li className="faq-question">
             <a className="slider">
+                 <span className="answer"> 
                     <span className="cover">
                         <BsQuestionCircle className="mark"/>  
                         {/* comment */}
                         {outerText}
                     </span>
 
-                <span>
-                    <button onClick = {() => setSelected(index)} selected={selected} index={index}>
-                            <BiChevronDown />
-                    </button>
-                </span>   
+                    <span>
+                        <button onClick = {() => setSelected(index)} selected={selected} index={index}>
+                                <BiChevronDown />
+                        </button>
+                    </span>   
+                 </span> 
                  {
                     selected===index ? <p>{innerText}</p> : null
                 }  

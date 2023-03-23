@@ -1,5 +1,10 @@
 .faq-question .slider{
+  display:flex;
+  flex-direction: column;
 
+}
+.faq-question .answer{
+  
 }
 .faq-question .slider button{
   border: none;

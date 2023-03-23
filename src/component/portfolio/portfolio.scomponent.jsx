@@ -12,6 +12,7 @@ import { Fragment } from "react";
 
 import "./portfolio.styles.scss";
 import PortfolioItem from "./portfolioItem/portfolioItem.component";
+import PortfolioFilter from "./portfolioFilter/portfolioFilter.component";
 
 //import imgList from "./portfolioItem/portfolioItemList";
 //import {imgList} from "./portfolioItem/portfolioItemList";
@@ -64,7 +65,26 @@ const Portfolio = () => {
             groupTitle : "Card3",
             group : "Card",
         }
-    ]
+    ];
+const category=[
+    {
+        name: "All",
+        filter : "*",
+        active :true 
+    },
+    {
+        name : "App",
+        filter : "app",
+    },
+    {
+        name : "Card",
+        filter : "card",
+    }, 
+    {
+        name: "Web",
+        filter: "web",
+    }
+];
 
     return(
         <section id="portfolio" className="portfolio">
@@ -75,11 +95,20 @@ const Portfolio = () => {
                         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                     </div>
 
-                    <ul id="portfolio-flters" className="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                        <li data-filter="*" className="filter-active">All</li>
+                    <ul id="portfolio-flters">
+                        {
+                            category?.map((item,index)=>
+                            <PortfolioFilter 
+                                data = {item}
+                                index ={index}
+                            />
+                            
+                        )}
+                        {/* <li data-filter="*" className="filter-active">All</li>
                         <li data-filter=".filter-app">App</li>
                         <li data-filter=".filter-card">Card</li>
-                        <li data-filter=".filter-web">Web</li>
+                        <li data-filter=".filter-web">Web</li> */}
+
                     </ul>
 
                     <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
