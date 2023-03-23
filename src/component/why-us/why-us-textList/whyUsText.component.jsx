@@ -13,10 +13,8 @@ const WhyUsText = ({data, selected,setSelected,index}) =>{
         setSelected,
         index
     })
-
-    const toggleSlider = () => {
-        return setSelected(index);
-    }
+        
+    
 
     return(
         <>
@@ -40,7 +38,8 @@ const WhyUsText = ({data, selected,setSelected,index}) =>{
             </Slider>
             <>
                 {
-                    selected===index ? <p>{textInside}</p> : null
+                    // selected===index ? <p>{textInside}</p> : null
+                    selected===index ? <p>{textInside}</p> :null
                 } 
             </>
         </WhyUsBlock>

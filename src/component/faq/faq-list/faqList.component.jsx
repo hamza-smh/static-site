@@ -1,6 +1,8 @@
 import "./faqList.styles.scss";
+import React,{ useState } from "react";
 import {BsQuestionCircle} from "react-icons/bs";
 import {BiChevronUp,BiChevronDown} from 'react-icons/bi';
+
 const FaqList =({data, selected,setSelected,index})=>{
     
     const {innerText,outerText} = data;
@@ -10,14 +12,16 @@ const FaqList =({data, selected,setSelected,index})=>{
             <a className="slider">
                  <span className="answer"> 
                     <span className="cover">
-                        <BsQuestionCircle className="mark"/>  
+                        <i  className="mark"><BsQuestionCircle/></i>  
                         {/* comment */}
                         {outerText}
                     </span>
 
                     <span>
                         <button onClick = {() => setSelected(index)} selected={selected} index={index}>
-                                <BiChevronDown />
+                               { 
+                                    selected === index ? <BiChevronUp />:<BiChevronDown />
+                               }
                         </button>
                     </span>   
                  </span> 
