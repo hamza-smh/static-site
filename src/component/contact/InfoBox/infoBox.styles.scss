@@ -1,3 +1,4 @@
+
 .infoBox .icon {
   font-size: 20px;
   color: #47b2e4;
@@ -10,6 +11,7 @@
   align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
+  position: relative;
 }
 .infoBox:hover{ 
     .icon {
