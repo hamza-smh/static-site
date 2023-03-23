@@ -17,7 +17,7 @@ return(
                    
                     <div className="watchVideo">
                             <a className="btn-watch-video">
-                               <i> <AiOutlinePlayCircle /></i>
+                                <AiOutlinePlayCircle />
                                 <span className = "watch-video-text" > Watch Video </span>
                             </a>
                         </div>

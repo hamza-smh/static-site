@@ -1,7 +1,8 @@
 import {IoMdDoneAll} from "react-icons/io";
 import "./checks.styles.scss";
 
-const Checks = ({text}) => {
+const Checks = ({data,index}) => {
+    const {text} = data
     return(
         <li><i><IoMdDoneAll/></i>{text}</li>
     );
