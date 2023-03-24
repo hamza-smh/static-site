@@ -13,9 +13,7 @@ import { Fragment } from "react";
 import "./portfolio.styles.scss";
 import PortfolioItem from "./portfolioItem/portfolioItem.component";
 import PortfolioFilter from "./portfolioFilter/portfolioFilter.component";
-
-//import imgList from "./portfolioItem/portfolioItemList";
-//import {imgList} from "./portfolioItem/portfolioItemList";
+import { useState } from "react";
 
 const Portfolio = () => {
 
@@ -70,7 +68,6 @@ const category=[
     {
         name: "All",
         filter : "*",
-        active :true 
     },
     {
         name : "App",
@@ -85,6 +82,7 @@ const category=[
         filter: "web",
     }
 ];
+    const [selected,setSelected] = useState(0);
 
     return(
         <section id="portfolio" className="portfolio">
@@ -101,6 +99,9 @@ const category=[
                             <PortfolioFilter 
                                 data = {item}
                                 index ={index}
+                                selected={selected}
+                                setSelected={setSelected} 
+                                key={index}
                             />
                             
                         )}

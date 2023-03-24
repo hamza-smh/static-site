@@ -2,6 +2,7 @@
   padding: 0px 10px;
   overflow: hidden;
   margin-bottom : 30px;
+  position: relative;
 }
 
 .portfolio .portfolio-item .portfolio-img {
@@ -16,7 +17,7 @@
   filter: grayscale(0);
   max-width: 100%;
   padding: 0px;
-  
+  min-height: 100%;
   &:hover{
     transform: scale(1.1);
     transition: all 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
@@ -25,19 +26,27 @@
 
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
-  position: relative;
+  position: absolute;
   //left: 15px;
-  bottom: 63px;
+  bottom: 0px;
   //right: 15px;
-  width: 100%;
-  height: 100%;
+  width: 94%;
+  //height: 100%;
   z-index: 3;
   transition: all 0.3s;
   background: rgba(55, 81, 126, 0.8);
   padding: 10px 15px;
-  //float:inherit;
-  
+  //float:inherit;  
 }
+
+.portfolio .portfolio-item:hover .portfolio-img img {
+  transform: scale(1.15);
+}
+
+.portfolio .portfolio-item:hover .portfolio-info {
+  opacity: 1;
+}
+
 
 .portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
@@ -70,12 +79,4 @@
 
 .portfolio .portfolio-item .portfolio-info .details-link {
   right: 10px;
-}
-
-.portfolio .portfolio-item:hover .portfolio-img img {
-  transform: scale(1.15);
-}
-
-.portfolio .portfolio-item:hover .portfolio-info {
-  opacity: 1;
 }

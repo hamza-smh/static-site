@@ -1,12 +1,14 @@
-const PortfolioFilter = ({data,index}) => {
-    const {name,filter,active} = data;
+const PortfolioFilter = ({data,index,selected,setSelected}) => {
+    const {name,filter} = data;
     return(
-        <li 
+        <>
+        <li onClick={()=>setSelected(index)}
             filter={filter}
-            active = {active}
             index={index} 
+             className={selected === index? "":""}
             > {name}    
         </li>
+        </>
     );
     
 }
