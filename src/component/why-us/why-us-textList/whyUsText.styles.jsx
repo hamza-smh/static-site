@@ -12,8 +12,9 @@ export const SliderIconButton = styled.button `
     background-color: white;
     border: none;
     color: #343a40;
-`
+  
 
+`
 
 export const Slider = styled.a `
   //padding: 5%;
@@ -27,15 +28,23 @@ export const Slider = styled.a `
   cursor: pointer;
   width: 100%;
   justify-content: space-between;
-  &:hover{
-    ${TextOutside}{
-      color: #47b2e4; 
+  // &:hover{
+  //   ${TextOutside}{
+  //     color: #47b2e4; 
+  //   }
+  // &:hover{
+  //   ${SliderIconButton}{
+  //     color: #47b2e4; 
+  //   } 
+    &.active {
+     ${TextOutside}{
+       color: #47b2e4; 
+     }
+  
+     ${SliderIconButton}{
+       color: #47b2e4; 
+     } 
     }
-  &:hover{
-    ${SliderIconButton}{
-      color: #47b2e4; 
-    } 
-  }
 `
 
 export const WhyUsBlock = styled.li`

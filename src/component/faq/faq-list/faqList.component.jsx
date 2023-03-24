@@ -7,10 +7,21 @@ const FaqList =({data, selected,setSelected,index})=>{
     
     const {innerText,outerText} = data;
 
+
+    const Toggler = (optionId) => {
+        if (selected === optionId) {
+            // if the selected option is clicked again, reset to default
+            setSelected("selected1");
+        } else {
+            setSelected(optionId);
+        }
+    };
+
+
     return(
         <li className="faq-question">
             <a className="slider">
-                 <span className="answer"> 
+                 <span className="answer" onClick = {() => Toggler(index)} > 
                     <span className="cover">
                         <i  className="mark"><BsQuestionCircle/></i>  
                         {/* comment */}
@@ -18,7 +29,7 @@ const FaqList =({data, selected,setSelected,index})=>{
                     </span>
 
                     <span>
-                        <button onClick = {() => setSelected(index)} selected={selected} index={index}>
+                        <button selected={selected} index={index}>
                                { 
                                     selected === index ? <BiChevronUp />:<BiChevronDown />
                                }

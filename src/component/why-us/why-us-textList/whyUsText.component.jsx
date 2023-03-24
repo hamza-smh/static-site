@@ -13,14 +13,23 @@ const WhyUsText = ({data, selected,setSelected,index}) =>{
         setSelected,
         index
     })
-        
+        const Toggler = (optionId) => {
+            if (selected === optionId) {
+                // if the selected option is clicked again, reset to default
+                setSelected("");
+            } else {
+                setSelected(optionId);
+            }
+        };
+
     
 
     return(
         <>
         <WhyUsBlock>
-            <Slider >
-                <TextOutside> 
+            <Slider onClick = {() => Toggler(index)}
+            className={selected === index? "active":""}>
+                <TextOutside > 
                     <Count>
                         {index +1}
                     </Count>
@@ -30,7 +39,8 @@ const WhyUsText = ({data, selected,setSelected,index}) =>{
                 
 
                  <ChevronIcon>
-                    <SliderIconButton onClick = {() => setSelected(index)}>
+                    {/* <SliderIconButton onClick = {() => setSelected(index)}> */}
+                    <SliderIconButton >
                         <SliderIcon selected={selected} index={index}/>
                     </SliderIconButton>
                 </ChevronIcon>
