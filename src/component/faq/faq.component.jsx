@@ -4,7 +4,7 @@ import "./faq.styles.scss";
 
 const FAQ = () => {
 
-    const [selected, setSelected] = useState();
+    const [selected, setSelected] = useState(0);
     const data = [
         {
             outerText : "Non consectetur a erat nam at lectus urna duis?",

@@ -11,7 +11,7 @@ const FaqList =({data, selected,setSelected,index})=>{
     const Toggler = (optionId) => {
         if (selected === optionId) {
             // if the selected option is clicked again, reset to default
-            setSelected("selected1");
+            setSelected("");
         } else {
             setSelected(optionId);
         }
@@ -21,7 +21,8 @@ const FaqList =({data, selected,setSelected,index})=>{
     return(
         <li className="faq-question">
             <a className="slider">
-                 <span className="answer" onClick = {() => Toggler(index)} > 
+                 <span onClick = {() => Toggler(index)}  //answer
+                  className={selected === index? "active":""}> 
                     <span className="cover">
                         <i  className="mark"><BsQuestionCircle/></i>  
                         {/* comment */}

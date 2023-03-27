@@ -2,18 +2,11 @@
 .faq-question .slider{
   display:flex;
   flex-direction: column;
-}
-.faq-question .slider .answer{
-    color:#37517e;
-  &:hover{
-    color: #47b2e4;
-    .faq-question .slider button{
-      color: #47b2e4;
-    }
-
+  .active{
+    color: #47b2e4; 
   }
-
 }
+
 .faq-question .slider button{
   border: none;
   background-color: transparent;
@@ -82,51 +75,3 @@
 
 
 
-
- .faq-list .icon-help {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  left: 20px;
-  color: #47b2e4;
-}
-
- .faq-list .icon-show,
- .faq-list .icon-close {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
- .faq-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 0;
-}
-
- .faq-list .icon-show {
-  display: none;
-}
-
- .faq-list a.collapsed {
-  color: #37517e;
-  transition: 0.3s;
-}
-
- .faq-list a.collapsed:hover {
-  color: #47b2e4;
-}
-
- .faq-list a.collapsed .icon-show {
-  display: inline-block;
-}
-
- .faq-list a.collapsed .icon-close {
-  display: none;
-}
-
-@media (max-width: 991px) {
-   .faq-list {
-    padding: 0;
-  }
-}
