@@ -1,0 +1,36 @@
+.galleryPreview{
+    height: 1000px;
+    background-color: red;
+
+}
+
+.slideshow-container{
+    display: flex;
+    flex-direction: row;
+    color:white;
+    //position: absolute;
+    //bottom: 200px;
+    height: 100%;
+//display: none;
+
+width: 1000px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999!important;
+    overflow: hidden;
+}
+
+
+.mySlides{
+    background-color: rgb(76, 72, 72);
+    
+    
+}
+.mySlides .img-fluid{
+    filter: grayscale(0);
+    width: 200px;
+    max-height: calc(100vh - 85px);
+   
+}

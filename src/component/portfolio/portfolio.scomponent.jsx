@@ -119,6 +119,7 @@ const category=[
                             <PortfolioItem
                                 data={item}
                                 index={index} 
+                                key={index}
                             />
                         )}
                        

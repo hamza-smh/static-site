@@ -8,7 +8,7 @@ import Card1 from "../../../../../brand/assets/img/portfolio/portfolio-7.jpg"
 import Card3 from "../../../../../brand/assets/img/portfolio/portfolio-8.jpg"
 import Web1 from "../../../../../brand/assets/img/portfolio/portfolio-9.jpg"
 
-
+import "./display.styles.scss";
 
 
 const DisplayGallery = () =>{
@@ -61,15 +61,33 @@ const DisplayGallery = () =>{
     
 
     return(
-        <div className="fullDisplayImage" >
-            {
-                    // data?.map((item,index)=>
-                    <div> 
-                        <img src= {data[1].displayImage} />
-                    </div>
-                    //)
-                }
-        </div>
+       
+         <div className="slideshow-container glightbox">
+
+ 
+                              <div className="mySlides ">
+                                <div className="numbertext">1 / 3</div>
+                                <img className="img-fluid" src={data[0].displayImage} />
+                                <div className="text">Caption Text</div>
+                              </div>
+
+                              <div className="mySlides ">
+                                <div className="numbertext">2 / 3</div>
+                                <img className="img-fluid" src={data[1].displayImage} />
+                                <div className="text">Caption Two</div>
+                              </div>
+
+                              <div className="mySlides ">
+                                <div className="numbertext">3 / 3</div>
+                                <img className="img-fluid" src={data[2].displayImage} />
+                                <div className="text">Caption Three</div>
+                              </div>
+
+
+                              
+                </div>
+                
+                // </div>
     );
 }
 

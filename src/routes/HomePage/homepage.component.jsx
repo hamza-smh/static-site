@@ -26,7 +26,7 @@ const HomePage =() =>{
             <Services />
             <CTASection />
             <Portfolio />
-                <Gallery />
+                {/* <Gallery /> */}
             <Team />
             <Pricing />
             <FAQ />

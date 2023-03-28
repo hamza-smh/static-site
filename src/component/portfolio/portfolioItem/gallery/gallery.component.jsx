@@ -5,7 +5,7 @@ import "./gallery.styles.scss";
 const Gallery = () => {
    
     return(
-        <div className="darkBackground">
+        <div className="backgroundPreview">
             <div>
                 <DisplayGallery />
             </div>
