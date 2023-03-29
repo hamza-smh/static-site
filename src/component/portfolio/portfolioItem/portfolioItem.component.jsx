@@ -1,9 +1,11 @@
 import "./portfolioItem.styles.scss";
-import {AiOutlinePlus} from 'react-icons/ai';
+
 import {FaLink,FaPlus} from 'react-icons/fa';
 import { useState } from "react";
 import {AiOutlineLeft,AiOutlineRight} from 'react-icons/ai';
 
+import { Route,Routes } from "react-router-dom";
+import PortfolioDetails from "../portfolioDetails/portfolioDetails.components";
 
 
 const PortfolioItem = ({data, index}) =>{
@@ -13,9 +15,16 @@ const PortfolioItem = ({data, index}) =>{
     const toggleZoom = () => {
          setZoomed(!zoomed);
     }
-    const Next =() =>{
-        const val = index+1;
+    
+    const[slide,setSlide]=useState(index);
+    
+    const next = () => {
+        setSlide((slide + 1) % data.length);
+        console.log(slide);
+    }
 
+    const prev = () => {
+        setSlide((slide - 1 + data.length) % data.length);
     }
 
     const {displayImage,groupTitle,group} = data;
@@ -35,16 +44,29 @@ const PortfolioItem = ({data, index}) =>{
 
                 {zoomed && (
                     <div className="zoomed-image" onClick={toggleZoom}>
-                        <a ><AiOutlineLeft  className="prev"/></a>
+
+                        <div onClick={prev} ><AiOutlineLeft  className="prev"/></div>
+                        
                             <img src={data.displayImage} alt={groupTitle} />
-                        <a ><AiOutlineRight className="next" /></a>
+                        
+                        < div onClick = {
+                                () => {
+                                    setSlide(index + 1);
+                            }} ><AiOutlineRight className="next" /></div>
 
                     </div>
       )}
                 </a>
-                    
-                <a href="portfolio-details.html" className="details-link" title="More Details">
-                    <i><FaLink /></i></a>
+        { <Routes>
+            <Route index element={<PortfolioDetails />} />
+            {/* <Route path = ":category" element={<Category />} /> */}
+        </Routes>}
+
+
+
+                <a href="/`${groupTitle}`" className="details-link" title="More Details">
+                    <i><FaLink /></i>
+                </a>
             </div>
         </div>
     )

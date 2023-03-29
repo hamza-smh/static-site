@@ -13,7 +13,7 @@ import Pricing from "../../component/pricing/pricing.component";
 import FAQ from "../../component/faq/faq.component";
 import Contact from "../../component/contact/contact.component";
 import Footer from "../../component/footer/footer.component";
-import Gallery from "../../component/portfolio/portfolioItem/gallery/gallery.component";
+
 
 const HomePage =() =>{
     return(
@@ -26,7 +26,6 @@ const HomePage =() =>{
             <Services />
             <CTASection />
             <Portfolio />
-                {/* <Gallery /> */}
             <Team />
             <Pricing />
             <FAQ />
