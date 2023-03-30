@@ -58,7 +58,7 @@ const PortfolioItem = ({data, index}) =>{
       )}
                 </a>
         { <Routes>
-            <Route index element={<PortfolioDetails />} />
+            {/* <Route index element={<PortfolioDetails />} /> */}
             {/* <Route path = ":category" element={<Category />} /> */}
         </Routes>}
 
