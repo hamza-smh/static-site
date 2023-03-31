@@ -8,12 +8,92 @@ import Card1 from "../../../brand/assets/img/portfolio/portfolio-7.jpg";
 import Card3 from "../../../brand/assets/img/portfolio/portfolio-8.jpg";
 import Web1 from "../../../brand/assets/img/portfolio/portfolio-9.jpg";
 
+export const productData = [{
+        displayImage: App1,
+        groupTitle: "App1",
+        group: "App",
+        id: 1
+    },
+    {
+        displayImage: App3,
+        groupTitle: "App3",
+        group: "App",
+        id: 2
+    },
+    {
+        displayImage: Web3,
+        groupTitle: "Web3",
+        group: "Web",
+        id: 3,
+    },
+    {
+        displayImage: Web2,
+        groupTitle: "Web2",
+        group: "Web",
+        id: 4
+    },
+    {
+        displayImage: Web1,
+        groupTitle: "Web1",
+        group: "Web",
+        id: 5
+    },
+    {
+        displayImage: App2,
+        groupTitle: "App2",
+        group: "App",
+        id: 6
+    },
+    {
+        displayImage: Card2,
+        groupTitle: "Card2",
+        group: "Card",
+        id: 6
+    },
+    {
+        displayImage: Card1,
+        groupTitle: "Card1",
+        group: "Card",
+        id: 7
+    },
+    {
+        displayImage: Card3,
+        groupTitle: "Card3",
+        group: "Card",
+        id: 8
+    }
+];
 
+export const category = [{
+        name: "All",
+        filter: "*",
+    },
+    {
+        name: "App",
+        filter: "app",
+    },
+    {
+        name: "Card",
+        filter: "card",
+    },
+    {
+        name: "Web",
+        filter: "web",
+    }
+];
 
-export const imgList = [
-                         App1, App2, App3,
-                         Web1, Web2, Web3,
-                         Card1, Card2, Card3
-                        ]
-
-export default {imgList};
+export  const info = [    
+       {
+          heading : "Category",description : ": Web design"
+       },
+       {
+          heading : "Client", description : ": ASU Company",
+       },
+       {
+          heading : "Project date", description : ": 01 March, 2020",
+       },
+       {
+          heading : "Project URL ",
+          description : <a href='https://www.example.com'>: Example Website</a>
+       }         
+  ]
