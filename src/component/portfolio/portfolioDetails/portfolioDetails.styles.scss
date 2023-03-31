@@ -66,10 +66,16 @@
 
 .portfolio-details .portfolio-details-slider  {
     height: 100%;
-    
 }
-.swiper-slide{
-    height: 200px;
+.portfolio-details .portfolio-details-slider .swiper-wrapper{
+  align-items:center;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-wrapper .swiper-slide{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
 }
 
 .portfolio-details .portfolio-details-slider img {
@@ -112,9 +118,6 @@
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
-}
 
 .portfolio-details .portfolio-description {
   padding-top: 30px;
@@ -124,6 +127,7 @@
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
+  color: black
 }
 
 .portfolio-details .portfolio-description p {

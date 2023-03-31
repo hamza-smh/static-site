@@ -4,8 +4,6 @@ import {FaLink,FaPlus} from 'react-icons/fa';
 import { useState } from "react";
 import {AiOutlineLeft,AiOutlineRight} from 'react-icons/ai';
 
-import { Route,Routes } from "react-router-dom";
-import PortfolioDetails from "../portfolioDetails/portfolioDetails.components";
 
 
 const PortfolioItem = ({data, index}) =>{
@@ -57,12 +55,6 @@ const PortfolioItem = ({data, index}) =>{
                     </div>
       )}
                 </a>
-        { <Routes>
-            {/* <Route index element={<PortfolioDetails />} /> */}
-            {/* <Route path = ":category" element={<Category />} /> */}
-        </Routes>}
-
-
 
                 <a href="/`${groupTitle}`" className="details-link" title="More Details">
                     <i><FaLink /></i>
