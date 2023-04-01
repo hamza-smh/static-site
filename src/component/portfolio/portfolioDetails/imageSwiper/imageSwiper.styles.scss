@@ -1,0 +1,24 @@
+
+.slick-track{
+    height : 850px;
+}
+.slick-slide{
+    height:850px;   
+}
+.imageslide-container{
+    height:850px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.slick-slider{
+    position: relative;
+    top: 20px
+}
+.slick-slider .slick-dots{
+    background-color: #fff !important;
+    border-radius: 0% !important;
+}
+.slick-slider .slick-dots ul li button{
+    background-color:transparent;
+}
