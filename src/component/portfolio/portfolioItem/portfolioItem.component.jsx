@@ -4,28 +4,32 @@ import {FaLink,FaPlus} from 'react-icons/fa';
 import { useState } from "react";
 import {AiOutlineLeft,AiOutlineRight} from 'react-icons/ai';
 
-
+import React, { Component } from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { productData } from "./portfolioItemList";
+import ImageSwiper from "../portfolioDetails/imageSwiper/imageSwiper.component";
 
 const PortfolioItem = ({data, index}) =>{
 
+     
     const [zoomed, setZoomed] = useState(false);
 
     const toggleZoom = () => {
          setZoomed(!zoomed);
     }
-    
-    const[slide,setSlide]=useState(index);
-    
-    const next = () => {
-        setSlide((slide + 1) % data.length);
-        console.log(slide);
-    }
+    const {displayImage,groupTitle,group,id} = data;
 
-    const prev = () => {
-        setSlide((slide - 1 + data.length) % data.length);
+    const [slide ,setSlide] = useState(id)
+    
+    const next = () =>{
+        setSlide(id+1);
+        console.log(slide)
     }
+    
 
-    const {displayImage,groupTitle,group} = data;
+    
     return(
         // <div className="col-lg-4 col-md-6 portfolio-item filter-app">
         <div className=" portfolio-item filter-app ">    
@@ -37,27 +41,26 @@ const PortfolioItem = ({data, index}) =>{
                 {/* <a href="assets/img/portfolio/{`${displayImage}`}.jpg" data-gallery="portfolioGallery"  */}
 
                 <a onClick={toggleZoom} title="App 1"
-                    className="portfolio-lightbox preview-link" >
+                    className=" preview-link" >
                         <i><FaPlus className="image-zoom"/></i>
 
                 {zoomed && (
                     <div className="zoomed-image" onClick={toggleZoom}>
 
-                        <div onClick={prev} ><AiOutlineLeft  className="prev"/></div>
+                        <div><AiOutlineLeft  className="prev"/></div>
+                  
+                     <img src={data.displayImage} alt={data.groupTitle} key={data.id}
+                            index={id}/>
                         
-                            <img src={data.displayImage} alt={groupTitle} />
-                        
-                        < div onClick = {
-                                () => {
-                                    setSlide(index + 1);
-                            }} ><AiOutlineRight className="next" /></div>
+                        <div onClick={next}><AiOutlineRight className="next" /></div>
 
                     </div>
       )}
                 </a>
 
-                <a href="/`${groupTitle}`" className="details-link" title="More Details">
-                    <i><FaLink /></i>
+                
+                <a href="/product-details" className="details-link" title="More Details">
+                    <i><FaLink className="detail-link"/></i>
                 </a>
             </div>
         </div>
