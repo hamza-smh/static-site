@@ -10,7 +10,7 @@ const toggleNavBarOpen = () => setIsNavBarOpen(!isNavBarOpen);
 
     return(
         <>
-            <i className="bi bi-list mobile-nav-toggle" onClick={toggleNavBarOpen}></i> 
+            {/* <i className="bi bi-list mobile-nav-toggle" onClick={toggleNavBarOpen}></i>  */}
             <FaBars className="mobile-nav-toggle" onClick={toggleNavBarOpen} /> 
         </>
     )

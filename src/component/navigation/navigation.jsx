@@ -43,9 +43,10 @@ import logo from 'F:/AMProtocol/project/my-app/src/brand/logo_transparent.png';
 import "./navigation.styles.scss";
 import NavLinkBar from "./NavLinkBar/navLinkBar.component";
 import GetStartedButton from "../get-started-button/getStartedbutton";
-import {BiChevronDown} from "react-icons/bi"
+import {BiChevronDown} from "react-icons/bi";
 
 import NavToggleButton from "./NavToggle/navtoggle.component";
+import NavBar from "./NavLinkBar/navLinkBar.component";
 
 
 
@@ -62,11 +63,14 @@ const Navigation = () => {
 
                 {/* <!-- <h1 className="logo me-auto"><a href="index.html">AMProtocolab</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo --> */}
-                <a href="index.html" className="logo"><img src={logo} alt="" className="logo"/></a>
+                <a href="#contain" className="logo"><img src={logo} alt="" className="logo"/></a>
+
+
 
                 <nav id="navbar" className="navbar">
-                    <ul>
-                        <li><a className="nav-link scrollto active" href="#hero">Home</a></li>
+                    <NavLinkBar />
+                    {/* <ul>
+                        <li><a className="nav-link scrollto active" href="#contain">Home</a></li>
                         <li><a className="nav-link scrollto" href="#about">About</a></li>
                         <li><a className="nav-link scrollto" href="#services">Services</a></li>
                         <li><a className="nav-link   scrollto" href="#portfolio">Portfolio</a></li>
@@ -90,9 +94,23 @@ const Navigation = () => {
                         </li>
                         <li><a className="nav-link scrollto" href="#contact">Contact</a></li>
                         {/* <li><a className="getstarted scrollto" href="#about">Get Started</a></li> */}
-                        <li><a className="nav-button-holder" href = "#about"><GetStartedButton buttonType="transparent" className="nav-button"/></a></li>
-                    </ul>
-                    <i className="bi bi-list mobile-nav-toggle"></i>
+                        {/* <li>
+                            <a className="nav-button-holder" href = "#about">
+                               <GetStartedButton buttonType="transparent" className="nav-button"/>
+                            </a>
+                        </li> */}
+                    {/* </ul>  */}
+                <button 
+                        className="navbar-toggler" 
+                        type="button"  data-toggle="collapse" 
+                        data-target="#navbarSupportedContent" 
+                        aria-controls="navbarSupportedContent" 
+                        aria-expanded="true" 
+                        aria-label="Toggle navigation">
+
+                   <span className="navbar-toggler-icon"><NavToggleButton /></span>
+                 </button>
+                    {/* <NavToggleButton /> */}
                 </nav>
                 {/* <!-- .navbar --> */}
 

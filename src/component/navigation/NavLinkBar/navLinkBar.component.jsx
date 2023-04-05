@@ -7,14 +7,18 @@ import NavDropDown from "../NavDropDown/navDropDown.component";
 const NavLinkBar = () =>{
     return(
         <div className="navLinkBar">
-        < ul className = "navlinkBar navbar-nav mr-auto" >
-            <NavItem nav_item= "Home"/>
-            <NavItem nav_item= "Services"/>
-            <NavItem nav_item= "Portfolio"/>
-            <NavItem nav_item= "Team"/>
+        < ul className = "navlinkBar  navbar-nav mr-auto" >
+            <NavItem nav_item= "Home" scrollTo="#contain" />
+            <NavItem nav_item= "About" scrollTo="#about"/>
+            <NavItem nav_item= "Services" scrollTo="#services"/>
+            <NavItem nav_item= "Portfolio" scrollTo="#portfolio"/>
+            <NavItem nav_item= "Team" scrollTo="#team"/>
+            
             <NavDropDown />
-            <NavItem nav_item = "Contact" />
-            <li className="nav-item "><a className ="nav-link scrollto" id = "getstarted" href = '/getstarted'>  
+            
+            <NavItem nav_item = "Contact" scrollTo="#contact"/>
+            
+            <li className="nav-item "><a className ="nav-link scrollto" id = "getstarted" href = '#about'>  
                 <GetStartedButton buttonType= "transparent" /></a> 
             </li> 
 
@@ -23,4 +27,4 @@ const NavLinkBar = () =>{
     )
 }
 
-export default NavLinkBar;
+ export default NavLinkBar;
