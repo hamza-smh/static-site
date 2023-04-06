@@ -9,7 +9,7 @@ const SkillSection = () => {
                 <div class="skills-container" data-aos="fade-up">
 
                     <div class="skill-row">
-                        <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+                        <div class="image-holder col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
                             <img src={skills} class="skill-img-fluid" alt=""/>
                         </div>
                         <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">

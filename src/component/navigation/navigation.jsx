@@ -42,19 +42,22 @@ import React from "react";
 import logo from 'F:/AMProtocol/project/my-app/src/brand/logo_transparent.png';
 import "./navigation.styles.scss";
 import NavLinkBar from "./NavLinkBar/navLinkBar.component";
-import GetStartedButton from "../get-started-button/getStartedbutton";
-import {BiChevronDown} from "react-icons/bi";
-
 import NavToggleButton from "./NavToggle/navtoggle.component";
-import NavBar from "./NavLinkBar/navLinkBar.component";
-
+import { FaBars } from "react-icons/fa";
+import { useState } from "react";
 
 
 
 
 
 const Navigation = () => {
-  return(<>
+
+const [isNavBarOpen, setIsNavBarOpen] = useState(true);
+const toggleNavBarOpen = () => setIsNavBarOpen(!isNavBarOpen);
+
+
+  return(
+        <>
   
 
           {/* <!-- ======= Header ======= --> */}
@@ -68,51 +71,32 @@ const Navigation = () => {
 
 
                 <nav id="navbar" className="navbar">
-                    <NavLinkBar />
-                    {/* <ul>
-                        <li><a className="nav-link scrollto active" href="#contain">Home</a></li>
-                        <li><a className="nav-link scrollto" href="#about">About</a></li>
-                        <li><a className="nav-link scrollto" href="#services">Services</a></li>
-                        <li><a className="nav-link   scrollto" href="#portfolio">Portfolio</a></li>
-                        <li><a className="nav-link scrollto" href="#team">Team</a></li>
-                        <li className="dropdown"><a href="#"><span>Drop Down</span><BiChevronDown /></a>
-                            <ul>
-                                <li><a href="#">Drop Down 1</a></li>
-                                <li className="dropdown"><a href="#"><span>Deep Drop Down</span> <i className="bi bi-chevron-right"></i></a>
-                                    <ul>
-                                        <li><a href="#">Deep Drop Down 1</a></li>
-                                        <li><a href="#">Deep Drop Down 2</a></li>
-                                        <li><a href="#">Deep Drop Down 3</a></li>
-                                        <li><a href="#">Deep Drop Down 4</a></li>
-                                        <li><a href="#">Deep Drop Down 5</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Drop Down 2</a></li>
-                                <li><a href="#">Drop Down 3</a></li>
-                                <li><a href="#">Drop Down 4</a></li>
-                            </ul>
-                        </li>
-                        <li><a className="nav-link scrollto" href="#contact">Contact</a></li>
-                        {/* <li><a className="getstarted scrollto" href="#about">Get Started</a></li> */}
-                        {/* <li>
-                            <a className="nav-button-holder" href = "#about">
-                               <GetStartedButton buttonType="transparent" className="nav-button"/>
-                            </a>
-                        </li> */}
-                    {/* </ul>  */}
-                <button 
-                        className="navbar-toggler" 
-                        type="button"  data-toggle="collapse" 
+ 
+
+                    {/* <NavLinkBar /> */}
+                    {/* <button 
+                        className="navbar-toggler" data-toggle="collapse"  type="button"
                         data-target="#navbarSupportedContent" 
                         aria-controls="navbarSupportedContent" 
                         aria-expanded="true" 
-                        aria-label="Toggle navigation">
-
-                   <span className="navbar-toggler-icon"><NavToggleButton /></span>
-                 </button>
-                    {/* <NavToggleButton /> */}
+                        aria-label="Toggle navigation" */}
+      {/* > */}
+        < FaBars className = " mobile-nav-toggle" onClick = {toggleNavBarOpen}/> 
+                        {
+                           
+                            isNavBarOpen?<NavLinkBar/>:<></>
+                        }
+                    {/* </button> */}
+            
+             
+                    
+                  
+                    
+                    
+                  
+                
                 </nav>
-                {/* <!-- .navbar --> */}
+               
 
             </div>
         </header>

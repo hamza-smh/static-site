@@ -74,3 +74,10 @@ $blue : #449dd4;
       text-decoration: none;
       color:$light-color;
 }
+
+@media(max-width:991px){
+  #navbarDropdown{
+    color: black;
+    
+  }
+}

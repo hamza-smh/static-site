@@ -7,7 +7,7 @@ $blue : #449dd4;
  .navlinkBar{
     width: 100%;
     height: 50px;
-    display: block;
+    display: flex;
     flex-direction: row;
     //align-items: center;
     justify-content: flex-end;
@@ -15,17 +15,204 @@ $blue : #449dd4;
     list-style-type: none;
     margin-top: 30px;
     overflow:visible;    
+    
   } 
+  
 #getstarted{
   padding:0px 0px 0px 0px;
   margin: 0px;
 }
 
 @media (max-width: 991px) {
-  .navlinkBar ul{
-    display: flex;
-    flex-direction: column;
+  .navLinkBar{
+    display: block;
+    background-color: #000001;
+
+
+
+    display: none;
+  }
+  
+ .navlinkBar .collapse{
     width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    //align-items: center;
+    justify-content: flex-start;
+    padding: 0px 0px 18px 0px;
+    list-style-type: none;
+    margin-top: 30px;
+    overflow:visible;    
+    display: none;
+  }
+  
+  
+  .navLinkBar .navlinkBar {
+    display: block;
+    flex-direction: column;
+    
+    width: 95%;
+    height: fit-content;
     background-color: #fff;
+    
+    border-radius: 20px;
+    top: 60px;
+    left: 20px;
+
+    .show{
+      display: none;
+    }
+  }
+  
+
+
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+.collapse {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(40, 58, 90, 0.9);
+  color: $blue;
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.collapse .navlinkBar {
+  display: flex;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 10px ;
+  margin:10px;
+  border-radius: 10px;
+  background-color: $light-color;
+  overflow-y: auto;
+  transition: 0.3s;
+
+  width : 95%;
+  height : 85%;
+  
+}
+.collapse .navlinkBar .nav-item .nav-link{
+  font-size: 16px;
+  color: $theme;
+  width : 100%;
+  height : 20%;
+    &:hover {
+      color:$blue;
+    }
+
+
+    text-align: center;
+}
+.collapse .navlinkBar .nav-item .dropdown .nav-link{
+    align-items: center;
+}
+.collapse .navlinkBar .nav-item .active{
+  color: $blue;
+
+}
+.collapse .navlinkBar .nav-item{
+  background-color: $light-color;
+  width : 100%;
+  height : 100%;
+}
+
+
+.button{
+  width: 100%;
+   &.transparent {
+        background-color: transparent;
+        color: $theme;
+
+    &:hover {
+      background-color: $blue;
+      color:$light-color;
+      border: none;
+    }
   }
 }
+
+.collapse .mobile-nav-toggle {
+  position: absolute;
+  // top: 15px;
+  // right: 15px;
+}
+
+
+.collapse-mobile a,
+.collapse-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #37517e;
+}
+
+.collapse-mobile a:hover,
+.collapse-mobile .active,
+.collapse-mobile li:hover>a {
+  color: #47b2e4;
+}
+
+.collapse-mobile .getstarted,
+.collapse-mobile .getstarted:focus {
+  margin: 15px;
+  color: #37517e;
+}
+
+.collapse-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.collapse-mobile .dropdown ul li {
+  min-width: 200px;
+}
+
+.collapse-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.collapse-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+
+.collapse-mobile .dropdown ul a:hover,
+.collapse-mobile .dropdown ul .active:hover,
+.collapse-mobile .dropdown ul li:hover>a {
+  color: #47b2e4;
+}
+
+.collapse-mobile .dropdown>.dropdown-active {
+  display: block;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
