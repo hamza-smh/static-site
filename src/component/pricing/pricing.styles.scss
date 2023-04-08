@@ -1,8 +1,9 @@
 .pricing .container{
     display: flex;
     flex-direction: column;
-    height: 780px;
+    height: 100%;
     padding: 0px;
+    justify-content: center;
 }
 .pricing .row {
   padding-top: 40px;
@@ -10,5 +11,12 @@
   width: 100%;
   display:flex;
   flex-direction: row;
+  margin:0px;
+  
 }
 
+@media(max-width:991px){
+  .pricing .row {
+    row-gap: 20px;
+  }
+}

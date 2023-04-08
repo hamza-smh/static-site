@@ -2,14 +2,14 @@
     height : 100%;
     display: flex;
     flex-direction: column;
-    padding:0px;
+    padding:0px 15px;
     overflow: hidden;
+
 }
 
 .team .container .row{
     display: flex;
     flex-direction: flex-start;
-    height : 100%;
     overflow : visible;
-    
+    height: fit-content;
 }
