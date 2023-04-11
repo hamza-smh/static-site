@@ -1,9 +1,9 @@
 import "./navItem.styles.scss";
 
-const NavItem = ({nav_item}) => {
+const NavItem = ({nav_item,scrollTo}) => {
 return(
     <>
-        <li className="nav-item"><a className="nav-link scrollto active"  href = {`/${nav_item}`} >{nav_item}</a></li>
+        <li className="nav-item"><a className="nav-link "  href = {scrollTo} >{nav_item}</a></li>
     </>
 )
 }

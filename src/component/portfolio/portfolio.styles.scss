@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: column;
   height: fit-content;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   align-items: stretch;
   
 }
 
 .portfolio-container{
   height: 100%;
-  width: 101.4%;
+  width: 100%;
   padding-bottom: 20px;
   column-count: 3;
   column-gap: 0px;
@@ -52,3 +52,14 @@
   color: #fff;
 }
 
+@media(max-width:991px){
+  .portfolio-container{
+  column-count: 2;
+}
+}
+
+@media(max-width:768px){
+  .portfolio-container{
+  column-count: 1;
+}
+}

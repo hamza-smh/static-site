@@ -1,0 +1,23 @@
+
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+  
+}
+
+.mobile-nav-toggle.bi-x {
+  color: #fff;
+}
+
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+    --isNavBarOpen:false;
+  }
+}

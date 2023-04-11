@@ -9,7 +9,7 @@ const NewsLetter = () => {
                         <div className="content col-lg-6">
                             <h4>Join Our Newsletter</h4>
                             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                            <form action="" method="post">
+                            <form action="" method="post" className="form-input">
                                 <input type="email" name="email" />
                                 <input type="submit" value="Subscribe" />
                             </form>

@@ -39,7 +39,7 @@ const Portfolio = () => {
 
                     </ul>
 
-                    <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                    <div className=" portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
                         {
                             productData?.map((item,index)=>

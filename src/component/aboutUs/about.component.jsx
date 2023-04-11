@@ -29,6 +29,7 @@ return(
                                     <Checks
                                         data = {item}
                                         index={index}
+                                        key={index}
                                     />
                                    )} 
 

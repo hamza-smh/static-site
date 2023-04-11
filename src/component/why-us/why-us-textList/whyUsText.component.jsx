@@ -7,12 +7,7 @@ import SliderIcon from "./sliderIcon/sliderIcon.component";
 const WhyUsText = ({data, selected,setSelected,index}) =>{
 
     const {textInside,textOutside} = data;
-    console.log({
-        data,
-        selected,
-        setSelected,
-        index
-    })
+   
         const Toggler = (optionId) => {
             if (selected === optionId) {
                 // if the selected option is clicked again, reset to default

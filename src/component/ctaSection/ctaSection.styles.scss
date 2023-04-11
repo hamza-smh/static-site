@@ -1,22 +1,23 @@
 .cta .container{
-    
     display: flex;
     justify-content:stretch;    
     justify-content: space-around;
+    height: 100%;
+    padding: 0px;
+    
 }
 .cta .container .row{
-    width :1100px;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    padding: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
 }
-
 .cta {
   background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../../brand/assets/img/cta-bg.jpg") fixed center center;
   background-size: cover;
-  padding: 120px 0;
+  padding: 120px 0px;
 }
 
 .cta h3 {
@@ -30,6 +31,7 @@
   color: #fff;
 }
 .cta .container .row .cta-button-holder{
+ display: flex;
   align-items: center;
   text-align: center;
   float: right;
@@ -54,16 +56,23 @@
   border: 2px solid #47b2e4;
 }
 
-@media (max-width: 1024px) {
-  .cta {
+// @media (max-width: 1024px) {
+ 
+// }
+
+@media (max-width: 991px) {
+   .cta {
     background-attachment: scroll;
   }
-}
 
-@media (min-width: 769px) {
   .cta .cta-btn-container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
+  .cta p{
+    text-align: center;
+  }
+
+
 }

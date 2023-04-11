@@ -1,6 +1,7 @@
 import "./footer-top.styles.scss";
 import UsefulLink from "./usefulLinks/usefulLinks.component";
 import {FaTwitter , FaFacebookF , FaInstagram,FaLinkedin,FaSkype} from 'react-icons/fa';
+import { services, useful } from "./usefulLinks/links.component";
 
 const FooterTop = () => {
     return(
@@ -20,6 +21,17 @@ const FooterTop = () => {
                                                 <div className="col-lg-3 col-md-6 footer-links">
                                                     <h4>Useful Links</h4>
                                                     <ul>
+{/* {
+    useful?.map((item,index)=>
+    <UsefulLink 
+        data = {item}
+        index={index}
+        key={index}
+    />)
+} */}
+
+
+                                                        
                                                         <UsefulLink title ="Home"></UsefulLink>
                                                         <UsefulLink title ="About Us"></UsefulLink>
                                                         <UsefulLink title ="Services"></UsefulLink>
@@ -44,11 +56,11 @@ const FooterTop = () => {
                                                     <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
                                                     <div className="social-links mt-3">
                                                         
-                                                        <a href=""><FaTwitter classname="img-fluid" /></a>
-                                                        <a href=""><FaFacebookF classname="img-fluid" /></a>
-                                                        <a href=""><FaInstagram classname="img-fluid" /></a>
-                                                        <a href=""><FaSkype classname="img-fluid" /></a>
-                                                        <a href=""><FaLinkedin classname="img-fluid" /></a>
+                                                        <a href=""><FaTwitter className="img-fluid" /></a>
+                                                        <a href=""><FaFacebookF className="img-fluid" /></a>
+                                                        <a href=""><FaInstagram className="img-fluid" /></a>
+                                                        <a href=""><FaSkype className="img-fluid" /></a>
+                                                        <a href=""><FaLinkedin className="img-fluid" /></a>
                                                     </div>
                                                 </div>
 
