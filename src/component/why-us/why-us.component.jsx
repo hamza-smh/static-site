@@ -11,7 +11,7 @@ const WhyUs = () => {
     const [selected, setSelected] = useState(0);
     
 
-console.log({selected})
+
     
 
 return(

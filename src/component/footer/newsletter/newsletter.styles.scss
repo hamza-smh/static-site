@@ -1,7 +1,7 @@
 
 .footer-newsletter {
   padding: 50px 0;
-  background: #eaeef8;
+  background: #e0e7f7;
   text-align: center;
   font-size: 15px;
   color: #000000;
@@ -10,9 +10,9 @@
 .footer-newsletter .container{
   display: flex;
   //flex-direction: row;
-  padding: 0px;
+  padding: 0px 15px;
   margin: auto;
-  
+  justify-content: center;
 }
 .footer-newsletter .container .row{
   height: fit-content;
@@ -29,6 +29,9 @@ justify-content: center;
   width: 100%;
   display: inline-block;
   
+  
+  padding:0px
+  
 }
 
 .footer-newsletter h4 {
@@ -42,18 +45,26 @@ justify-content: center;
 
 .footer-newsletter form {
   margin-top: 30px;
-  background: #fff;
+  background: #ffffff;
   padding: 6px 10px;
   position: relative;
   border-radius: 50px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
   text-align: left;
+  box-shadow: 0px 0px 1px black,1px 10px 10px rgb(121, 120, 120) ;
+background-color: #f2eaff;
 }
 
  .footer-newsletter form input[type=email] {
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 100px);
+  background-color: #f2eaff;
+  color:#034078;
+  &:focus{
+    
+    background-color: rgb(255, 255, 255);
+  }
   
 }
 
@@ -67,12 +78,12 @@ justify-content: center;
   font-size: 16px;
   padding: 0 20px;
   background: #47b2e4;
-  color: #fff;
+  color: #ffffff;
   transition: 0.3s;
   border-radius: 50px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
  .footer-newsletter form input[type=submit]:hover {
-  background: #209dd8;
+  background: #a1021f;
 }

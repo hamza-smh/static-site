@@ -44,7 +44,7 @@ import "./navigation.styles.scss";
 import NavLinkBar from "./NavLinkBar/navLinkBar.component";
 import NavToggleButton from "./NavToggle/navtoggle.component";
 import { FaBars } from "react-icons/fa";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 
 
@@ -52,10 +52,28 @@ import { useState } from "react";
 
 const Navigation = () => {
 
-const [isNavBarOpen, setIsNavBarOpen] = useState(true);
+const [isNavBarOpen, setIsNavBarOpen] = useState(false);
 const toggleNavBarOpen = () => setIsNavBarOpen(!isNavBarOpen);
 
 
+
+ const [myVariable, setMyVariable] = useState('initial value');
+
+ useEffect(() => {
+   const mediaQuery = window.matchMedia('(max-width: 991px)');
+   const handleScreenChange = (event) => {
+     if (event.matches) {
+       setIsNavBarOpen(false);
+     } else {
+       setIsNavBarOpen(true);
+     }
+   };
+   mediaQuery.addEventListener('change', handleScreenChange);
+   return () => {
+     mediaQuery.removeEventListener('change', handleScreenChange);
+   };
+ }, []);
+  
   return(
         <>
   

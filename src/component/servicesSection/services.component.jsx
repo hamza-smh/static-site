@@ -23,7 +23,7 @@ const Services =() =>{
                             <ServiceCard
                                 data={item}
                                 index={index} 
-                                
+                                key={index}
                             />
                     )}
 

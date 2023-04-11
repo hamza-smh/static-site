@@ -14,10 +14,10 @@ const TeamMember = ({data,index}) =>{
                     <span>{post}</span>
                     <p>{about}</p>
                     <div className="social">
-                        <a href=""><FaTwitter classname="img-fluid" /></a>
-                        <a href=""><FaFacebookF classname="img-fluid" /></a>
-                        <a href=""><FaInstagramSquare classname="img-fluid" /></a>
-                        <a href=""><FaLinkedin classname="img-fluid" /></a>
+                        <a href=""><FaTwitter className="img-fluid" /></a>
+                        <a href=""><FaFacebookF className="img-fluid" /></a>
+                        <a href=""><FaInstagramSquare className="img-fluid" /></a>
+                        <a href=""><FaLinkedin className="img-fluid" /></a>
                     </div>
                 </div>
             </div>

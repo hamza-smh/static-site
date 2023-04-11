@@ -9,11 +9,14 @@ import {BiX} from "react-icons/bi";
 
 
 
-const Plan =({title,price,buttonType,strike,deactivate}) =>{
+const Plan =({data}) =>{
 
 
+
+
+    const {title,price,buttonType,strike,deactivate} = data;
     return(
-        <div className="plan col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div className="plan col-lg-4">
             <div className="box">
                 <h3>{title}</h3>
                 <h4><sup>$</sup>{price}<span>per month</span></h4>
