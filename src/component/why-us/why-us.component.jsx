@@ -1,10 +1,9 @@
 import WhyUsText from "./why-us-textList/whyUsText.component";
 import "./why-us.styles.scss"
 import whyus from "F:/AMProtocol/project/my-app/src/brand/assets/img/why-us.png";
-// import { useContext } from "react";
-// import { WhyUsContext } from "../../context/whyus.context";
 import { useState } from "react";
-import { text } from "./whyusTextdata.component";
+import team from "./../../brand/assets/https_/lottiefiles.com/team.png";
+import GetStartedButton from "../get-started-button/getStartedbutton";
 
 const WhyUs = () => {
 
@@ -22,14 +21,27 @@ return(
                 
                 <div className="why-us-text">
                     <div className="content">
-                        <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
+                        <h5>About Us</h5>
+                        <h3><strong>We are experts in SaaS Development</strong> </h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                           Welcome to AMProtocol Labs, your go - to destination
+                           for innovative SaaS solutions and custom software projects.Founded in January 2023 by Anab and Hassan, our mission is to identify gaps in traditional practices and improve processes using cutting - edge techniques.
                         </p>
+                        <p>
+                           Anab and Hassan, the visionary founders of AMProtocol Labs, lead a talented team of software engineers, designers, and project managers.We 're driven by the desire to make a difference in the software industry by bridging gaps in traditional practices and enhancing processes through innovative techniques.
+                        </p>
+                        <p>
+                           Our commitment to quality, creativity, and forward - thinking sets us apart, allowing us to consistently deliver top - notch solutions
+                           for our clients.We have new SaaS products in pipeline,
+                        </p>
+                        <p> 
+                            Click onto our <strong>Portfolio</strong> to check them out.
+                        </p>
+                        <GetStartedButton buttonType="solid" buttonText="Explore Now"/>
                     </div>
                     
                     <div>
-                    <ul className="whyUsTextBlock"> 
+                    {/* <ul className="whyUsTextBlock"> 
                         {
                             text?.map((item,index)=>
                             <WhyUsText
@@ -41,11 +53,12 @@ return(
                             />
                         )}
                         
-                    </ul>
+                    </ul> */}
                     </div>
                 </div>
                 <div className="img"  >
-                        <img src = {whyus} className="why-us-img" alt = "WHY_US" />
+                        <img src = {team} className="why-us-img" alt = "WHY_US" />
+                        <div className="rectangle"></div>
                 </div>                
             </div>
         </div>

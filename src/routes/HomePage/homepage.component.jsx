@@ -20,16 +20,16 @@ const HomePage =() =>{
         <>
             <Container />
             <Client />
-            <AboutUs />
+            {/* <AboutUs /> */}
             <WhyUs />
-            <SkillSection />
+            {/* <SkillSection /> */}
             <Services />
-            <CTASection />
+            {/* <CTASection />
             <Portfolio />
             <Team />
             <Pricing />
             <FAQ />
-            <Contact />
+            <Contact /> */}
             <Footer />
         </>
     )

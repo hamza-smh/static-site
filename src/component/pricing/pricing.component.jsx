@@ -7,7 +7,7 @@ const Pricing = () => {
         {
             title : "Free Plan",
             price : "0",
-            buttonType :"transblue",
+            buttonType :"transparent",
             strike : "na",
             deactivate :true
 
@@ -15,14 +15,14 @@ const Pricing = () => {
         {
             title : "Business Plan",
             price : "29",
-            buttonType : "inverted",
+            buttonType : "solid",
             strike: "",
             deactivate: false,
         },
         {
             title : "Developer Plan",
             price : "49",
-            buttonType : "transblue",
+            buttonType : "transparent",
             strike: "",
             deactivate: false,
         }

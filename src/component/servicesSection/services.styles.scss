@@ -1,3 +1,10 @@
+#services{
+  background-color: rgb(29, 53, 87,0.85) ;
+  overflow: visible;
+}
+#serviceImage{
+    mix-blend-mode: multiply;
+}
 .services .container{
   display: flex;
   flex-direction: column;

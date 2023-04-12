@@ -1,7 +1,7 @@
 import ServiceCard from "./serviceCard/serviceCard.component";
 import "./services.styles.scss";
 import { ourServices } from "./serviceList.component";
-
+import background from "../../brand/assets/https_/lottiefiles.com/pexels-andrea-piacquadio-845451 1.png";
 const Services =() =>{
 
    
@@ -9,7 +9,9 @@ const Services =() =>{
 
     return(
         <>
+        <img src= {background} id="serviceImage" />
         <section id="services" className="services section-bg">
+            
                 <div className="container" data-aos="fade-up">
 
                     <div className="section-title">

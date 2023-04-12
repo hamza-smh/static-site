@@ -262,11 +262,20 @@
 #contain {
   width: 100%;
   height: 80vh;
-  background: #37517e;
+  background-color: #1D3557;
+  
   display:flex;
   align-items:center;
   padding-bottom: 0px;
   overflow: visible;
+}
+#contain .containImage{
+  position: absolute;
+  width: 1440px;
+  height: 500px;
+  left: 0px;
+  top: 0px;
+  mix-blend-mode: multiply;
 }
 
 #contain .container {
@@ -288,13 +297,21 @@
 .holder .links{
   display:flex;
   justify-content:start; 
-  //justify-content-lg-start
+  margin-top:20px;
+  padding-left: 20px;
+}
+#contain h3 {
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 40px;
+
+  
 }
 #contain h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 37px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 49.22px;
   color: #fff;
 }
 
