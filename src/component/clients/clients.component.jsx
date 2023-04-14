@@ -9,6 +9,7 @@ const Client = () => {
     return(
         <>
             <section id="clients" className="clients section-bg">
+                <h4>Trusted By</h4>
                 <div className="trail" data-aos="zoom-in">
                     {allClients.map((item,index) =>(
                             < div className = "brand-names" key={index}>

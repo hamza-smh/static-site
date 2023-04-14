@@ -37,14 +37,13 @@
 
 
 
-
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import logo from 'F:/AMProtocol/project/my-app/src/brand/logo_transparent.png';
 import "./navigation.styles.scss";
 import NavLinkBar from "./NavLinkBar/navLinkBar.component";
 import NavToggleButton from "./NavToggle/navtoggle.component";
 import { FaBars } from "react-icons/fa";
-import { useState,useEffect } from "react";
+
 
 
 
@@ -52,7 +51,7 @@ import { useState,useEffect } from "react";
 
 const Navigation = () => {
 
-const [isNavBarOpen, setIsNavBarOpen] = useState(false);
+const [isNavBarOpen, setIsNavBarOpen] = useState(true);
 const toggleNavBarOpen = () => setIsNavBarOpen(!isNavBarOpen);
 
 
@@ -74,12 +73,36 @@ const toggleNavBarOpen = () => setIsNavBarOpen(!isNavBarOpen);
    };
  }, []);
   
+
+
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+        const handleScroll = () => {
+          const isScrolled = window.scrollY > 50;
+          if (isScrolled !== scrolled) {
+            setScrolled(isScrolled);
+          }
+        };
+
+        document.addEventListener('scroll', handleScroll);
+            return () => {
+              document.removeEventListener('scroll', handleScroll);
+            };
+            }, [scrolled]);
+
+
+
+
+
+
   return(
         <>
   
-
+  
           {/* <!-- ======= Header ======= --> */}
-        <header id="header" className="fixed-top ">
+        <header id="header" className={`navbar ${scrolled ? 'scrolled' : ''}`}>
             <div className="container ">
 
                 {/* <!-- <h1 className="logo me-auto"><a href="index.html">AMProtocolab</a></h1> -->

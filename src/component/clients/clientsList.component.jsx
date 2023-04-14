@@ -9,8 +9,8 @@ import trustly from "F:/AMProtocol/project/my-app/src/brand/assets/img/clients/t
 export const allClients = [
     {id: 1, client: myob},
     {id: 2, client: belimo},
-    {id: 3, client: lifegroups},
-    {id: 4, client: lilly},
+    {id: 3, client: lilly},
+    {id: 4, client: trustly},
     {id: 5, client: citrus},
-    {id: 6, client: trustly}
+    {id: 6, client: lifegroups},
 ];

@@ -387,9 +387,17 @@
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  background: linear-gradient(#23334df1 10%, #37517eb7);
+  //background: linear-gradient(#23334df1 10%, #37517eb7);
+  position: fixed;
+  top:0%;
+  width: 100%;
+  height: fit-content;
+
 }
 
+#header.scrolled {
+  background-color: #1D3557;
+}
 #header .container{
   justify-content: space-between;
   display: flex;

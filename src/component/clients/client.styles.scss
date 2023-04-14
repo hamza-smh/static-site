@@ -1,26 +1,29 @@
 .clients{    
-    background-color:#eceef4;
-    height: 6rem;
+    background-color:#F1FAEE;
+    height: 9rem;
     padding: 10px 90px 0px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    
-    
+    justify-items: center;
+}
+.clients h4{
+    text-align: center;
 }
 
 .trail{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 5px 0;
+    //padding: 5px 0;
+    width:80%;
     text-align: center;
 }
 .img-fluid{
-    max-width: 45%;
+    max-width: 60%;
     transition: all 0.4s ease-in-out;
     display: inline-block;
     padding: 8% 0px;
-    filter: grayscale(100);
+   
 }
 .img-fluid:hover {
   filter: none;
