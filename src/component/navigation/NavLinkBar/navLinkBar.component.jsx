@@ -9,7 +9,7 @@ const NavLinkBar = () =>{
         <div className="navLinkBar" >
         < ul className = "navlinkBar  navbar-nav mr-auto collapse navbar-collapse" id="navbarSupportedContent" >
             <NavItem nav_item= "Home" scrollTo="#contain" />
-            <NavItem nav_item= "About" scrollTo="#about"/>
+            <NavItem nav_item= "About" scrollTo="#aboutUs"/>
             <NavItem nav_item= "Services" scrollTo="#services"/>
             <NavItem nav_item= "Portfolio" scrollTo="#portfolio"/>
             <NavItem nav_item= "Testimonials" scrollTo="#testimonials"/>

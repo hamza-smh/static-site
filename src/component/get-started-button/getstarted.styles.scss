@@ -31,6 +31,9 @@ $hotRed : #ff0303;
       border: none;
     }
   }
+
+
+
     &.solid {
       background-color: $red;
       color: $light-color;
@@ -44,7 +47,7 @@ $hotRed : #ff0303;
 
 
   &.inverted {
-    background-color: $red;
+    background-color: transparent;
     color: $light-color;
     
 

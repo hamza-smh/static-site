@@ -2,6 +2,7 @@ import ServiceCard from "./serviceCard/serviceCard.component";
 import "./services.styles.scss";
 import { ourServices } from "./serviceList.component";
 import background from "../../brand/assets/https_/lottiefiles.com/pexels-andrea-piacquadio-845451 1.png";
+import GetStartedButton from "../get-started-button/getStartedbutton";
 const Services =() =>{
 
    
@@ -9,14 +10,14 @@ const Services =() =>{
 
     return(
         <>
-        <img src= {background} id="serviceImage" />
+        
         <section id="services" className="services section-bg">
-            
-                <div className="container" data-aos="fade-up">
+                <img src= {background} id="serviceImage" />
+                <div className="container">
 
                     <div className="section-title">
                         <h2>Services</h2>
-                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        <p>We provide a wide range of software solutions to help streamline and optimize your business operations. Browse our services below to see how we can help you achieve your goals</p>
                     </div>
 
                     <div className="row-service">
@@ -28,7 +29,10 @@ const Services =() =>{
                                 key={index}
                             />
                     )}
-
+                    </div>
+                    <div className="buttons">
+                        <GetStartedButton buttonText="Learn More" buttonType="inverted"/>
+                        <GetStartedButton buttonText="Get A Quote" buttonType="solid"/>
                     </div>
                 </div>
             </section>

@@ -14,7 +14,7 @@ import {AiOutlinePlayCircle} from "react-icons/ai";
 //                 <h1>Building Cutting Edge SaaS Solutions</h1>
 //                 <h2>We are team of talented technology enthusiasts helping business with digital automation</h2>
 //                 <div className="links">
-//                     < GetStartedButton buttonType = "inverted" href="#about" />
+//                     < GetStartedButton buttonType = "inverted" href="#learnMore" />
                    
 //                     <div className="watchVideo">
 //                             <a className="btn-watch-video">

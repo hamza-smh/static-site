@@ -3,7 +3,7 @@ import "./getstarted.styles.scss";
 
 const BUTTON_STYLE_CLASSES = {
     transparent: 'transparent',
-   // inverted   : "inverted",
+    inverted   : "inverted",
     solid : "solid",
 
 
