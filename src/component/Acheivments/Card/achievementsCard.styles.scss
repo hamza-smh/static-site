@@ -1,12 +1,17 @@
-.why-us .card{
+
+  
+
+
+.achievements .card{
     background-color: transparent;
     border: 0px transparent;
     align-items: stretch;
     display: flex;
-    padding:0px 15px;
-    
+    padding:0px 15px; 
+    margin: 0px 20px;
+
 }
-.why-us .card .icon-box {
+.achievements .card .icon-box {
   
   padding: 50px 20px;
   transition: all ease-in-out 0.4s;
@@ -19,67 +24,55 @@
   
 }
 
- .why-us .icon-box .icon {
+ .achievements .icon-box .icon {
   margin-bottom: 30px;
-  width: fit-content;
+  
 
 
 
 }
 
-.why-us .icon-box .icon img {
-  background-color: #1D3557;  
-  border-radius: 50px;
+.achievements .icon-box .icon img {
+  
+  
   padding: 10px 10px;
   transition: 0.3s;
   position: relative;
-  width:40px;
-  height:40px;
+  width:60px;
+  height:50px;
 }
 
-.why-us .icon-box h4 {
+.achievements .icon-box h4 {
   font-weight: 500;
   margin: 0px 15px 15px 0px;
   font-size: 18px;
   text-align: start;
 
 }
+.achievements .icon-box h1 {
+  color : #E63946;
+  font-weight: 800;
+  font-size: 70px;
 
-.why-us .icon-box h4 a {
+  text-shadow: 1px 1px 2px black;
+}
+.achievements .icon-box h4 a {
   color:black;
   transition: ease-in-out 0.3s;
 }
 
-.why-us .icon-box p {
+.achievements .icon-box p {
   line-height: 18.75px;
   font-size: 16px;
   margin-bottom: 0;
   text-align: justify;
 }
 
-.why-us .icon-box:hover {
-  //transform: translateY(-10px);
-  transform:scale(1.1);
+.achievements .icon-box:hover h1 {
+  text-shadow: 1px 2px 2px black;
 }
-
-.why-us .icon-box:hover h4 a {
- 
-  color:#1D3557;
- 
-}
-
-.why-us .icon-box:hover p {
-  font-weight: 600;
-  color:#1D3557;
- 
-}
-.why-us .icon-box:hover .icon img{
-  background-color: #084292;
-}
-
-
 @media(max-width : 768px){
-  .why-us .card{
+  .achievements .card{
     
 display: grid;
 grid-template-columns: 2;

@@ -7,6 +7,7 @@ import LearnMore from "../../component/LearnMore/learnMore.component";
 import SkillSection from "../../component/skills-section/skills.component";
 import Services from "../../component/servicesSection/services.component";
 import WhyUs from "../../component/WhyUs/whyus.component";
+import Achievements from "../../component/Acheivments/Achievements.component";
 import CTASection from "../../component/ctaSection/ctaSection.component";
 import Portfolio from "../../component/portfolio/portfolio.scomponent";
 import Team from "../../component/team/team.component";
@@ -14,6 +15,7 @@ import Pricing from "../../component/pricing/pricing.component";
 import FAQ from "../../component/faq/faq.component";
 import Contact from "../../component/contact/contact.component";
 import Footer from "../../component/footer/footer.component";
+
 
 
 const HomePage =() =>{
@@ -26,6 +28,7 @@ const HomePage =() =>{
             {/* <SkillSection /> */}
             <Services />
             <WhyUs />
+            <Achievements />
             {/* <CTASection /> */}
             {/* <Portfolio />
             <Team />
