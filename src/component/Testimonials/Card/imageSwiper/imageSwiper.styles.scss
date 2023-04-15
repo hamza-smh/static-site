@@ -1,0 +1,37 @@
+
+.test .container .slick-track{
+    height : 500px;
+}
+.test .container .slick-slide{
+    height:0px;   
+}
+.test .container  .imageslide-container{
+    height:150px;
+    display: none;
+    align-items: center;
+    align-content: center;
+}
+.test .container  .slick-slider{
+    position: relative;
+    top: 20px;
+}
+
+.test .container  .slick-slider .slick-dots{
+    background-color: transparent !important;
+    border-radius: 0% !important;
+
+}
+.test .container  .slick-slider .slick-dots ul{
+    background-color: transparent !important;
+    padding: 0px !important;
+    margin: 0px 0px 0px 50px !important;
+    
+}
+.test .container  .slick-slider .slick-arrow{
+    display:none !important;
+}
+.test .container  .slick-slider .slick-dots ul li{
+   background-color: #fff;
+   border-radius: 25px;
+}
+

@@ -1,0 +1,74 @@
+.feature .card{
+    background-color: transparent;
+    border: 0px transparent;
+    align-items: stretch;
+    display: flex;
+    padding:0px 15px;
+    width: 100%;
+    margin: 10px 30px;
+    
+}
+.feature .card .icon-box {
+  
+  padding: 50px 10px;
+  transition: all ease-in-out 0.4s;
+  background: #fff;
+  border-radius: 5px;
+  height:90%;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+ .feature .icon-box .icon {
+  margin-bottom: 30px;
+  width: fit-content;
+
+
+
+}
+
+.feature .icon-box .icon img {
+  transition: 0.3s;
+  position: relative;
+  
+}
+
+.feature .icon-box h4 {
+  font-weight: 700;
+  margin: 0px 15px 15px 0px;
+  font-size: 18px;
+  text-align: center;
+
+}
+
+.feature .icon-box h4 a {
+  color:black;
+  transition: ease-in-out 0.3s;
+}
+
+.feature .icon-box p {
+  line-height: 18.75px;
+  font-size: 16px;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+.feature .icon-box:hover {
+  //transform: translateY(-10px);
+  transform:scale(1.1);
+}
+
+.feature .card .button{
+  border-radius: 7px;
+}
+
+
+
+@media(max-width : 768px){
+  .feature .card{
+    
+display: grid;
+grid-template-columns: 2;
+}}

@@ -1,6 +1,6 @@
 import WhyUsCard from "./Card/whyUsCard.component";
 import "./whyus.styles.scss";
-import { feature } from "./whyUsList.component";
+import { badge } from "./whyUsList.component";
 
 
 
@@ -23,7 +23,7 @@ const WhyUs =() =>{
 
                     <div className="row-service">
                     {
-                        feature?.map((item,index)=>
+                        badge?.map((item,index)=>
                             <WhyUsCard
                                 data={item}
                                 index={index} 

@@ -4,7 +4,7 @@ import Security from "../../brand/assets/https_/lottiefiles.com/WhyUs image/Vect
 import Customer from "../../brand/assets/https_/lottiefiles.com/WhyUs image/Vector-2.png";
 
 
-export const feature = [
+export const badge = [
     {
         icon: Quality,
         title: "Custom Web Development",

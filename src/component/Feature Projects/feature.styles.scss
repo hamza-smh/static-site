@@ -1,0 +1,47 @@
+.feature{
+    background-color: #A8DADC6E;
+ //   background-image: linear-gradient(to right ,#A8DADC 0.43,#fff);
+}
+.feature .container .row-feature{
+    display: flex;
+    flex-direction: row;    
+}
+
+.feature .section-title p{
+    color: black;
+    text-align: left;
+    padding: 20px 0px 0px;
+    font-size: 21px;
+    
+}
+.feature h2{
+    margin:0px;
+    padding: 0px;
+    text-align: start;
+    border: none;
+    color:#000;
+    text-transform: none;
+    font-weight: 800;
+}
+
+.feature .section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 380px;
+  height: 2px;
+  background: #457B9D;
+  bottom: -5px;
+  left: calc(5% - 60px);
+}
+
+.feature .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: none;
+  width: 40px;
+  height: 3px;
+  background: #457B9D;
+  bottom: 0;
+  left: calc(50% - 20px);
+}

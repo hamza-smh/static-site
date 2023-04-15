@@ -1,0 +1,37 @@
+
+.feature .container .slick-track{
+    height : 500px;
+}
+.feature .container .slick-slide{
+    height:0px;   
+}
+.feature .container  .imageslide-container{
+    height:150px;
+    display: none;
+    align-items: center;
+    align-content: center;
+}
+.feature .container  .slick-slider{
+    position: relative;
+    top: 20px;
+}
+
+.feature .container  .slick-slider .slick-dots{
+    background-color: transparent !important;
+    border-radius: 0% !important;
+
+}
+.feature .container  .slick-slider .slick-dots ul{
+    background-color: transparent !important;
+    padding: 0px !important;
+    margin: 0px 0px 0px 50px !important;
+    
+}
+.feature .container  .slick-slider .slick-arrow{
+    display:none !important;
+}
+.feature .container  .slick-slider .slick-dots ul li{
+   background-color: #fff;
+   border-radius: 25px;
+}
+
