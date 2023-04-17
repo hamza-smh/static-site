@@ -1,0 +1,115 @@
+.test .card{
+    background-color: transparent;
+    border: 0px transparent;
+    align-items: stretch;
+    display: flex;
+    padding:0px 15px;
+    width: 95%;
+    margin: 0px 0px;
+    
+}
+.test .card .icon-box {
+  
+  padding: 20px 30px;
+  transition: all ease-in-out 0.4s;
+  background: transparent;
+  border: 4px solid #fff;
+  border-radius: 15px;
+  height:90%;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 5px  10px black;
+}
+.test .card .icon-box .intro {
+  display: flex;
+  justify-content: space-between;
+}
+.test .card .icon-box .intro .user{
+  display: flex;
+  
+  //flex-direction: row;
+}
+.test .card .icon-box .intro .apostrophe{
+    display: flex;
+    justify-items: right;
+    height: 50px
+}
+
+
+ .test .icon-box .icon {
+  margin-bottom: 30px;
+  font-size: 50px;
+  justify-content: flex-start;
+  width: fit-content;
+  color:#fff;
+  background-color: white;
+  color: #1D3557;
+  height: 50px;
+  border-radius: 100px;
+  padding:0px 0px 0px;
+
+
+}
+
+
+.test .icon-box h4 {
+  
+  margin: 0px 0px 0px 30px;
+  
+  text-align: center;
+  //width: fit-content;
+  height: fit-content;
+  //margin-left: 30px
+}
+
+.test .icon-box h4 a {
+  color:#fff;
+  transition: ease-in-out 0.3s;
+  font-weight: 700;
+  font-size: 18px;
+}
+.test .icon-box h4 .rating{
+  display: flex;
+}
+.test .icon-box h4 .star{
+  display: flex;
+  position: relative;
+  top:30px;
+  font-size: 10px;
+ color:#FAFF00; 
+}
+
+.test .icon-box p {
+  line-height: 18.75px;
+  font-size: 16px;
+  margin-bottom: 0;
+  text-align: justify;
+  color: rgb(255,255,255,0.65);
+  font-weight: 300;
+  
+}
+.test .icon-box .city{
+  position: absolute;
+  padding-top: 5px;
+  height: fit-content;
+}
+// .test .icon-box:hover {
+//   //transform: translateY(-10px);
+//   transform:scale(1.1);
+// }
+
+.test .card .button{
+  border-radius: 7px;
+}
+
+
+
+@media(max-width : 768px){
+  .test .card{
+    
+display: grid;
+grid-template-columns: 2;
+}}

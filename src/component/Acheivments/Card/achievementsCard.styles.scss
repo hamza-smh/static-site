@@ -1,0 +1,79 @@
+
+  
+
+
+.achievements .card{
+    background-color: transparent;
+    border: 0px transparent;
+    align-items: stretch;
+    display: flex;
+    padding:0px 15px; 
+    margin: 0px 20px;
+
+}
+.achievements .card .icon-box {
+  
+  padding: 50px 20px;
+  transition: all ease-in-out 0.4s;
+  background: transparent;
+  border-radius: 10px;
+  height:90%;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+ .achievements .icon-box .icon {
+  margin-bottom: 30px;
+  
+
+
+
+}
+
+.achievements .icon-box .icon img {
+  
+  
+  padding: 10px 10px;
+  transition: 0.3s;
+  position: relative;
+  width:60px;
+  height:50px;
+}
+
+.achievements .icon-box h4 {
+  font-weight: 500;
+  margin: 0px 15px 15px 0px;
+  font-size: 18px;
+  text-align: start;
+
+}
+.achievements .icon-box h1 {
+  color : #E63946;
+  font-weight: 800;
+  font-size: 70px;
+
+  text-shadow: 1px 1px 2px black;
+}
+.achievements .icon-box h4 a {
+  color:black;
+  transition: ease-in-out 0.3s;
+}
+
+.achievements .icon-box p {
+  line-height: 18.75px;
+  font-size: 16px;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+.achievements .icon-box:hover h1 {
+  text-shadow: 1px 2px 2px black;
+}
+@media(max-width : 768px){
+  .achievements .card{
+    
+display: grid;
+grid-template-columns: 2;
+}}

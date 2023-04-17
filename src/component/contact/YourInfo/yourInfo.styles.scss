@@ -1,0 +1,5 @@
+.form-group ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1; /* Firefox */
+  max-width: 100%;
+}
