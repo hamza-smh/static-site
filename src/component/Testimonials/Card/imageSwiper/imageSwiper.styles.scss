@@ -1,10 +1,13 @@
 
 .test .container .slick-track{
-    height : 500px;
+    height : 270px;
 }
 .test .container .slick-slide{
     height:0px;   
 }
+// .test .container .slick-active{
+//     transform: scale(1.1);
+// }
 .test .container  .imageslide-container{
     height:150px;
     display: none;
@@ -29,6 +32,9 @@
 }
 .test .container  .slick-slider .slick-arrow{
     display:none !important;
+    
+    
+    
 }
 .test .container  .slick-slider .slick-dots ul li{
    background-color: #fff;

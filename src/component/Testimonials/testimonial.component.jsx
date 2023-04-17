@@ -22,6 +22,7 @@ const Testimonial =() =>{
                     </div>
 
                     <ImageSwiper />
+                    
                 </div>
             </section>
         </>

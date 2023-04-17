@@ -1,9 +1,11 @@
+import "./yourInfo.styles.scss";
+
+
 const YourInfo = ({data, index}) => {
-    const {label,type,name}= data;
+    const {placeholder,type,name}= data;
     return(
-        <div className="form-group col-md-6">
-            <label htmlFor="name">{label}</label>
-            <input type={type} name={name} className="form-control" id={name} required />
+        <div className="form-group col-md-3">
+            <input placeholder={placeholder} type={type} name={name} className="form-control" id={name} required />
         </div>
     )
 }

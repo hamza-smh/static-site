@@ -1,21 +1,41 @@
 import "./testimonialCard.styles.scss";
-
+import star from "./../../../brand/assets/https_/lottiefiles.com/Star.png";
 import GetStartedButton from "../../get-started-button/getStartedbutton";
-
+import { comments } from "../TestimonialList.component";
+import {BsStarFill} from "react-icons/bs";
+import apostrophe from "../../../brand/assets/https_/lottiefiles.com/”.png";
 
 const TestimonialCard = ({data,index}) =>{
 
-    const {title}=data;
-    //col-xl-3 col-md-6
+    const {user,comment,dp,city,rating}=data;
+    
+
+     const ratingStars = Array(rating).fill(null);
     return(
 
         <div className="card test-Card ">
             <div className="icon-box">
-                <div className="icon">
-                  
+                <div className="intro">
+                    <div className="user">
+                    <div className="icon">
+                      {dp}
+                    </div>
+                    <h4>
+                        <a href="">{user}</a>
+                        <p className="city">{city}</p>
+                        <div className="rating">    
+                            {
+                                ratingStars.map((star, index) => (
+                                     <BsStarFill className="star"/>
+                                ))
+                            }    
+                        </div>   
+                    </h4>
+                    </div>
+                    <img src={apostrophe} className="apostrophe"/>
                 </div>
-                <h4><a href="">{title}</a></h4>
-                <GetStartedButton buttonText="View More" />
+                <p>{comment}</p>
+                
                 
             </div>
         </div>

@@ -35,12 +35,12 @@ const HomePage =() =>{
             <Feature />
             <Testimonial />
             {/* <CTASection /> */}
-            {/* <Portfolio />
+             {/* <Portfolio />
             <Team />
             <Pricing />
-            <FAQ />
+            <FAQ /> */}
             <Contact />
-            <Footer /> */}
+            <Footer /> 
         </>
     )
 }

@@ -8,19 +8,35 @@
 
 .contact .container .section-title{
   max-width: 100%;
+
+  h2{
+    color:#000;
+    text-transform: none;
+    font-weight: 900;
+  }
+  p{
+    color: rgb(0,0,0,0.65);
+    font-weight: 600;
+    font-size: 21px;
+    padding: 0px 45px;
+
+  }
 }
+
+
+.contact .section-title h2::before ,
+.contact .section-title h2::after {
+  content: "";
+  display: none;
+}
+
+
+
+
 .contact .container .row{
-  //height: 100%;
-  //width:100%;
   position: relative;
   left :15px;
   
-  //display: flex;
-  //justify-content: stretch;
-  //flex-direction: row;
-  //box-sizing: border-box;
-  //padding:0px;
-  //justify-content: space-between;
 }
 
 .contact .container #detail{
@@ -29,22 +45,25 @@
   display: flex;
   flex-direction: row;
 }
-.yourInfo{
-    display: flex;
-    flex-direction: row;
+.aboutUser .yourInfo{
+  
+  
+  column-count: 2;
+    
+    
     
 }
-.contact .info {
-  border-top: 3px solid #47b2e4;
-  border-bottom: 3px solid #47b2e4;
-  padding: 30px;
-  background: #fff;
-  width: 100%;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+// .contact .info {
+//   border-top: 3px solid #47b2e4;
+//   border-bottom: 3px solid #47b2e4;
+//   padding: 30px;
+//   background: #fff;
+//   width: 100%;
+//   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
 
-  //height: fit-content;
+//   //height: fit-content;
   
-}
+// }
 .contact .aboutUser,
 .contact .infoHolder{
   display: flex;
@@ -79,11 +98,11 @@
 
 .contact .php-email-form {
   width: 100%;
-  border-top: 3px solid #47b2e4;
-  border-bottom: 3px solid #47b2e4;
   padding: 30px;
   background: #fff;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  // border-top: 3px solid #47b2e4;
+  // border-bottom: 3px solid #47b2e4;
+  //box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
 .contact .php-email-form .form-group {
@@ -159,7 +178,7 @@
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #47b2e4;
+  border:1.5px solid #457B9D;
 }
 
 .contact .php-email-form input {
