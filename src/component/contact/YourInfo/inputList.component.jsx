@@ -1,18 +1,21 @@
 export const yourInfo = [{
-        placeholder: "Your Name ",
+        placeholder: "Full Name* ",
         type: "text",
+        need : true
     },
 
     {
-        placeholder: "Your Email ",
+        placeholder: "Contact Number* ",
+        type: "text",
+        need: true
+    },
+
+    {
+        placeholder: "Email* ",
         type: "email",
-        name: "email"
+        name: "email",
+        need: true
     },
-    {
-        placeholder: "Contact Number ",
-        type: "text",
-    },
-
     {
         placeholder: "Company ",
         type: "text",

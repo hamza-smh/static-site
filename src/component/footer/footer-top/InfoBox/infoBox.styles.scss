@@ -1,0 +1,25 @@
+.infoBox{
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  align-items:stretch;
+  padding: 10px;
+}
+.infoBox img{
+  width: 25px;
+}
+
+
+.infoBox p {
+//  padding: 0 0 10px 60px;
+  margin: 0px 20px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.contact .info .email p {
+  padding-top: 5px;
+  
+}
+
+

@@ -1,7 +1,7 @@
 
 .footer-top {
-  padding: 60px 0 30px 0;
-  background: #fff;
+  //padding: 20px 0 5px 0;
+  background: #457B9D;
   height: fit-content;
 }
 .footer-top .container {
@@ -9,6 +9,8 @@
     flex-direction: row;
     height: fit-content;
     justify-content: inline-block;
+
+    
 }
 .footer-top .container .row{
     display: flex;
@@ -20,7 +22,14 @@
 .footer-top .footer-contact {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  
+  justify-content: center;
+  align-content: center;
+  
+}
+.footer-top .footer-contact .logo{
+  width: 190px;
+  transform: scale(1.3);
 }
 
 .footer-top .footer-contact h3 {
@@ -35,23 +44,53 @@
 
  .footer-top .footer-contact p {
   font-size: 14px;
+  font-weight: 300;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Jost", sans-serif;
-  color: #5e5e5e;
+  width: 85%;
+  //font-family: "Jost", sans-serif;
+  color:rgb(255,255,255, 0.65);
 }
 
  .footer-top h4 {
-  font-size: 16px;
+  font-size: 30px;
   font-weight: bold;
-  color: #37517e;
+  color: #fff;
   position: relative;
-  padding-bottom: 12px;
+  padding:0px 0px 12px 40px;
+  width: 100%;
 }
 
- .footer-top .footer-links {
-  margin-bottom: 30px;
+.footer-top .footer-explore{
+  padding: 30px;
 }
+ .footer-top .explore{
+ // column-count: 2;
+ display: flex;
+ flex-direction: row;
+ //margin-top: 30px ;
+
+ }
+ .footer-top .links {
+  width: 100%;
+ }
+
+ .footer-top .links a{
+  color: #fff;
+ }
+ .footer-top .footer-links {
+  //margin-bottom: 20px;
+  padding: 20px 0px 0px;
+  
+}
+ .footer-top .footer-links .info{
+  //background-color: rebeccapurple;
+  width: 100%;
+  padding : 0px 40px;
+   border-left: 1px solid #fff;
+   border-right: 1px solid #fff;
+  
+ }
 
  .footer-top .footer-links ul {
   list-style: none;
@@ -87,19 +126,19 @@
 //   text-decoration: none;
 //   color: #47b2e4;
 // }
-
+ 
  .footer-top .social-links a {
-  font-size: 18px;
+  font-size: 40px;
   display: inline-block;
-  background: #47b2e4;
+  background: transparent;
   color: #fff;
   line-height: 1;
-  padding: 8px 0;
+  //padding: 8px 0;
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  // width: 36px;
+  // height: 36px;
   transition: 0.3s;
 }
 

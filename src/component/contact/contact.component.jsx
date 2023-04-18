@@ -1,12 +1,8 @@
 import GetStartedButton from "../get-started-button/getStartedbutton";
-import InfoBox from "./InfoBox/infoBox.component";
 import "./contact.styles.scss";
-import {GoLocation} from "react-icons/go";
-import {AiOutlineMail} from "react-icons/ai";
-import {BsPhone} from "react-icons/bs";
 import YourInfo from "./YourInfo/yourInfo.component";
-import Map from "./map/map.component";
 import { yourInfo } from "./YourInfo/inputList.component";
+import Person from "../../brand/assets/https_/lottiefiles.com/man.avif"
 
 const Contact = () =>{
 
@@ -23,8 +19,12 @@ const Contact = () =>{
 
                     <div className="row" id = "detail">
 
-                        <div className="aboutUser col-lg-7 mt-5 mt-lg-0 ">
+                        < div className = "aboutUser col-lg-7 mt-5 mt-lg-0" >
+
+
                             <form action="forms/contact.php" method="post" role="form" className="php-email-form">
+                                
+                                <h3>Contact Us</h3>                                
                                 
                                 <div className="yourInfo">
                                     {
@@ -39,8 +39,8 @@ const Contact = () =>{
                                 
                                 
                                 <div className="form-group">
-                                    <label htmlFor="name">Message</label>
-                                    <textarea className="form-control" name="message" rows="10" required></textarea>
+                                    
+                                    <textarea className="form-control" name="message" rows="10" placeholder="Message*" required></textarea>
                                 </div>
                                 
                                 {/* <div className="my-3">
@@ -51,13 +51,25 @@ const Contact = () =>{
                                 </div> */}
                                 
                                 
-                                <div className="text-center"><GetStartedButton buttonType="solid" buttonText="Send Message" /></div>
+
+                                <label className="agree">
+                                    <input type="checkbox" />
+                                    I agree to process personal data
+                                
+                                </label>
+
+                                <div><GetStartedButton buttonType="solid" buttonText="Submit" /></div>
                             
                             </form>
                         </div>
-
+                        
+                        {/* col-lg-7 mt-5 mt-lg-0  */}
+                                <div className="img-holder">
+                            <img src = {Person} className="display"/>
                     </div>
 
+                    </div>
+                    
                 </div>
             </section>
     )

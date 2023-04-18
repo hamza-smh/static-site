@@ -2,10 +2,10 @@ import "./yourInfo.styles.scss";
 
 
 const YourInfo = ({data, index}) => {
-    const {placeholder,type,name}= data;
+    const {placeholder,type,name,need}= data;
     return(
-        <div className="form-group col-md-3">
-            <input placeholder={placeholder} type={type} name={name} className="form-control" id={name} required />
+        <div className="form-group ">
+            <input placeholder={placeholder} type={type} name={name} className="form-control" id={name} required={need} />
         </div>
     )
 }
