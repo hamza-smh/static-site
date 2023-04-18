@@ -44,15 +44,9 @@
   height: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: stretch;
 }
-.aboutUser .yourInfo{
-  
-  
-  column-count: 2;
-    
-    
-    
-}
+
 // .contact .info {
 //   border-top: 3px solid #47b2e4;
 //   border-bottom: 3px solid #47b2e4;
@@ -70,34 +64,15 @@
   align-items: stretch;
 }
 
-
-
-.contact .info .social-links {
-  padding-left: 60px;
+.contact .aboutUser h3{
+  width : 70%;
+  border-bottom: 0.8px solid black;
+  margin-bottom: 30px;
 }
 
-.contact .info .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #333;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-  margin-right: 10px;
-}
-
-.contact .info .social-links a:hover {
-  background: #47b2e4;
-  color: #fff;
-}
 
 .contact .php-email-form {
-  width: 100%;
+  width: 170%;
   padding: 30px;
   background: #fff;
   // border-top: 3px solid #47b2e4;
@@ -110,6 +85,10 @@
   
 }
 
+.contact .php-email-form .button{
+  font-size: 20px;
+  padding:5px;
+}
 .contact .php-email-form .validate {
   display: none;
   color: red;
@@ -164,10 +143,6 @@
   margin-bottom: 20px;
 }
 
-.contact .php-email-form label {
-  padding-bottom: 8px;
-}
-
 .contact .php-email-form input,
 .contact .php-email-form textarea {
   border-radius: 0;
@@ -189,18 +164,31 @@
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
-  background: #47b2e4;
-  border: 0;
-  padding: 12px 34px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 50px;
-}
+// .contact .php-email-form button[type=submit] {
+//   background: #47b2e4;
+//   border: 0;
+//   padding: 12px 34px;
+//   color: #fff;
+//   transition: 0.4s;
+//   border-radius: 50px;
+// }
 
 .contact .php-email-form button[type=submit]:hover {
   background: #209dd8;
 }
+
+.contact .php-email-form .agree{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  input{
+    margin-right:10px ;
+    width: 20px;
+    border-radius: 20px !important;
+  }
+}
+
+
 
 @-webkit-keyframes animate-loading {
   0% {
@@ -220,4 +208,29 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+
+
+
+
+
+
+.contact #detail{
+  justify-content: space-evenly;
+  display: flex;
+  justify-content: stretch;
+}
+.contact .img-holder {
+  position: relative;
+  padding: 20px;
+  
+  
+}
+.contact .img-holder .display{
+  
+  box-shadow: 5px 1px 5px rgb(214, 214, 214);
+  border-radius: 30px;
+  
 }
