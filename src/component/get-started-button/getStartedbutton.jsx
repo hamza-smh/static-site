@@ -5,6 +5,7 @@ const BUTTON_STYLE_CLASSES = {
     transparent: 'transparent',
     inverted   : "inverted",
     solid : "solid",
+    normal: "normal"
 
 
 }

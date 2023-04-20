@@ -62,9 +62,106 @@
 }
 
 
-@media(max-width : 768px){
+@media(max-width : 991px){
+  
+.services .icon-box {
+  padding: 10px 2px;
+  height:95%;
+}
+
+.services .icon-box .icon {
+  margin-bottom: 10px;
+}
+
+.services .icon-box .icon img {
+  position: relative;
+}
+
+.services .icon-box h4 {
+  margin: 0px 10px 10px 0px;
+  font-size: 18px;
+  text-align: center;
+
+}
+
+.services .icon-box p {
+  line-height: 18.75px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+
+
+}
+
+
+@media(max-width: 786px){
+.services .icon-box {
+  padding: 10px 2px;
+  height:95%;
+}
+
+.services .icon-box .icon {
+  margin-bottom: 10px;
+}
+
+.services .icon-box .icon img {
+  position: relative;
+}
+
+.services .icon-box h4 {
+  margin: 0px 5px 5px 0px;
+  font-size: 18px;
+  text-align: center;
+
+}
+
+.services .icon-box p {
+  line-height: 18.75px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+}
+
+@media(max-width: 556px){
   .card{
-    
-display: grid;
-grid-template-columns: 2;
-}}
+    display: flex;
+    align-items: center;
+  }
+.services .icon-box {
+  padding: 10px 2px;
+  height:95%;
+  width: 50%;
+
+}
+
+.services .icon-box .icon {
+  margin-bottom: 10px;
+}
+
+.services .icon-box .icon img {
+  position: relative;
+}
+
+.services .icon-box h4 {
+  margin: 0px 5px 5px 0px;
+  font-size: 18px;
+  text-align: center;
+
+}
+
+.services .icon-box p {
+  line-height: 18.75px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+
+
+
+
+}

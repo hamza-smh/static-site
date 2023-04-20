@@ -10,22 +10,21 @@ const FooterTop = () => {
      
     return(
         <div className="footer-top">
-                    <div className="container">
-                        <div className="row">
-
-                            <div className="col-lg-4 col-md-6 footer-contact">
-                                
+            <div className="container">
+                <div className="row">
+                    <div className="footer-contact col-lg-4 col-mt-6">
+              {/* col-lg-4 col-md-6                    */}
                                 <img className = "logo" src={logo}/>
-                                
+                                <div className="info">
                                 <p>AMProtocolab is a leading software solution company that specializes in providing innovative and effective solutions to businesses of all sizes.</p>
                                 <div className="social-links mt-3">
                                 <a href=""><FaTwitter className="img-fluid" /></a>
                                 <a href=""><FaFacebookF className="img-fluid" /></a>
                                 <a href=""><FaLinkedin className="img-fluid" /></a>
                                 </div>
-                            </div>
-
-                            <div className="col-lg-4 col-md-6 footer-links">
+                                </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 footer-links">
              
                                 
                                 <div className="info">
@@ -39,9 +38,8 @@ const FooterTop = () => {
                                     }    
                                 </div>
 
-                            </div>
-
-                            <div className="col-lg-4 col-md-6 footer-explore ">
+                    </div>
+                    <div className="col-lg-4 col-md-6 footer-explore ">
                                     <h4>Explore</h4>
                                            
                                     <div className="explore">
@@ -67,10 +65,10 @@ const FooterTop = () => {
                                                 }
                                             </ul> 
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     
     )
 

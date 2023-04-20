@@ -21,7 +21,7 @@ const WhyUs =() =>{
                        
                     </div>
 
-                    <div className="row-service">
+                    <div className="row-whyUs">
                     {
                         badge?.map((item,index)=>
                             <WhyUsCard

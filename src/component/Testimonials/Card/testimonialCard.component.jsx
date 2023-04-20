@@ -13,7 +13,7 @@ const TestimonialCard = ({data,index}) =>{
      const ratingStars = Array(rating).fill(null);
     return(
 
-        <div className="card test-Card ">
+        <div className="card test-Card " key={index}>
             <div className="icon-box">
                 <div className="intro">
                     <div className="user">
