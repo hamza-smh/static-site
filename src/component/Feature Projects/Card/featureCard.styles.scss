@@ -3,20 +3,18 @@
     border: 0px transparent;
     align-items: stretch;
     display: flex;
-    padding:0px 15px;
+    padding:0px 20px;
     width: 100%;
-    margin: 10px 30px;
+    margin:0px ;
     
 }
 .feature .card .icon-box {
   
-  padding: 50px 10px;
+  padding: 50px 20px 30px;
   transition: all ease-in-out 0.4s;
   background: #fff;
   border-radius: 5px;
   height:90%;
-  align-content: center;
-  justify-content: center;
   text-align: center;
   
 }
@@ -31,13 +29,14 @@
 
 .feature .icon-box .icon img {
   transition: 0.3s;
+  
   position: relative;
   
 }
 
 .feature .icon-box h4 {
   font-weight: 700;
-  margin: 0px 15px 15px 0px;
+  margin: 0px 15px 25px 0px;
   font-size: 18px;
   text-align: center;
 
@@ -66,9 +65,37 @@
 
 
 
+@media(max-width : 1200px){
+ 
+ .feature .card .icon-box {
+  padding: 50px;
+}
+ .feature .icon-box .icon img{
+  padding: 0px 30px;
+}
+}
+
+
+@media(max-width : 991px){
+ 
+ .feature .card .icon-box {
+  
+  padding: 50px 70px;
+  text-align: center;
+  
+}
+ .feature .icon-box .icon {
+      padding: 0px 100px;
+  }
+}
+
+
 @media(max-width : 768px){
-  .feature .card{
-    
-display: grid;
-grid-template-columns: 2;
-}}
+ 
+ .feature .card .icon-box {
+     padding: 50px;
+  }
+ .feature .icon-box .icon {
+      padding: 0px ;
+  }
+}

@@ -56,7 +56,7 @@ const toggleNavBarOpen = () => setIsNavBarOpen(!isNavBarOpen);
 
 
 
- const [myVariable, setMyVariable] = useState('initial value');
+
 
  useEffect(() => {
    const mediaQuery = window.matchMedia('(max-width: 991px)');

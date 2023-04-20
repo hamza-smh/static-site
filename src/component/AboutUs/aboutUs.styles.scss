@@ -178,7 +178,8 @@
 .img .rectangle{
   background-color: #a8dadcac;
   position:absolute;
-  width: 240px;
+  width: 220px;
+  width : 40%;
   height: 320px;
   position:absolute;
   bottom:100px;
@@ -215,6 +216,10 @@
 
 
 
+#aboutUs .button{
+  width: 40%
+}
+
 
 
 
@@ -239,10 +244,14 @@
 
 @media (max-width: 991px) {
 
-  .why-us{
+  #aboutUs{
     max-height: fit-content;
+    
   }
-  .why-us .content{
+  #aboutUs .container-fluid{
+    padding: 0px 90px;
+  }
+  .aboutUs-text .content{
     padding-left: 0;
     padding-right: 0;
   }
@@ -255,16 +264,17 @@
   flex-direction: column-reverse;
   display: inline-flex;
   }
- .whyUsTextBlock{
-  padding: 0px 0px;
-}
  
-.img-holder{
+ 
+#aboutUs .img{
   align-items: center;
 }
-.why-us-img{
-  padding : 0px 20%;
-  
+// .aboutUs-img{
+//   padding : 0px 20%;
+// }
+
+#aboutUs .button{
+  width: 20%
 }
 
 }

@@ -57,5 +57,17 @@ $hotRed : #ff0303;
       border: none;
     }
   }
+
+  &.normal{
+    background-color: transparent;
+    color: black;
+    
+    &:hover {
+      background-color: $red ;
+      color: white;
+      border: none;
+    }
+    
+  }
 }
 @media (max-width: 991px) {}

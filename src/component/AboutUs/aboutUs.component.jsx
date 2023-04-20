@@ -39,22 +39,7 @@ return(
                         </p>
                         <GetStartedButton buttonType="solid" buttonText="Explore Now"/>
                     </div>
-                    
-                    {/* <div>
-                     <ul className="whyUsTextBlock"> 
-                        {
-                            text?.map((item,index)=>
-                            <WhyUsText
-                                selected={selected}
-                                setSelected={setSelected} 
-                                data={item}
-                                index={index} 
-                                key={index}
-                            />
-                        )}
-                        
-                    </ul> 
-                    </div> */}
+                 
                 </div>
                 <div className="img"  >
                         <img src = {team} className="aboutUs-img" alt = "ABOUT_US" />

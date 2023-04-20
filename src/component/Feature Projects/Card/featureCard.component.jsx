@@ -15,7 +15,7 @@ const FeatureCard = ({data,index}) =>{
                     <img src= {featureImg}  />
                 </div>
                 <h4><a href="">{title}</a></h4>
-                <GetStartedButton buttonText="View More" />
+                <GetStartedButton buttonText="View More" buttonType="normal" />
                 
             </div>
         </div>

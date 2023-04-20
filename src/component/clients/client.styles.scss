@@ -1,10 +1,12 @@
 .clients{    
-    background-color:#F1FAEE;
-    height: 9rem;
+    background-color:#F1FAEE !important;
+    
+    height: 10rem;
     padding: 10px 90px 0px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
+    
 }
 .clients h4{
     text-align: center;
@@ -17,6 +19,7 @@
     //padding: 5px 0;
     width:80%;
     text-align: center;
+    
 }
 .img-fluid{
     max-width: 60%;
@@ -38,12 +41,16 @@
 
 
 @media (max-width: 991px){
-
+.clients{
+        height: 13rem !important;
+        background-color: red;
+}
 .trail{
     display : grid;
     grid-template-columns: repeat(3,1fr);
     column-gap: 0px;
-    row-gap: 0px;   
+    row-gap: 0px;  
+        //height: 12rem; 
     
 }
 .brand-names{
