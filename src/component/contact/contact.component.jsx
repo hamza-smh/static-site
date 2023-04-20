@@ -19,8 +19,8 @@ const Contact = () =>{
 
                     <div className="row" id = "detail">
 
-                        < div className = "aboutUser col-lg-7 mt-5 mt-lg-0" >
-
+                        < div className = "aboutUser " >
+{/* col-lg-7 mt-5 mt-lg-0 */}
 
                             <form action="forms/contact.php" method="post" role="form" className="php-email-form">
                                 

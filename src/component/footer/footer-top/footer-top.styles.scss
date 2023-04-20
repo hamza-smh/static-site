@@ -17,14 +17,15 @@
     flex-direction: row;
     height: fit-content;
     
+    
 }
 
 .footer-top .footer-contact {
   display: flex;
   flex-direction: column;
   
-  justify-content: center;
-  align-content: center;
+  //justify-content: center;
+  //align-content: center;
   
 }
 .footer-top .footer-contact .logo{
@@ -71,9 +72,6 @@
  //margin-top: 30px ;
 
  }
- .footer-top .links {
-  width: 100%;
- }
 
  .footer-top .links a{
   color: #fff;
@@ -81,7 +79,7 @@
  .footer-top .footer-links {
   //margin-bottom: 20px;
   padding: 20px 0px 0px;
-  
+  width: 100%;
 }
  .footer-top .footer-links .info{
   //background-color: rebeccapurple;
@@ -146,4 +144,109 @@
   background: #209dd8;
   color: #fff;
   text-decoration: none;
+}
+
+
+
+@media(max-width:991px){
+.footer-top .footer-contact {
+ display: flex;
+ flex-direction: row;
+.info{
+  padding-top: 60px;
+}
+.social-links{
+  display: flex;
+  justify-content: end;
+  padding: 0px 60px;
+  
+}
+}
+
+ .footer-top .footer-links {
+  //margin-bottom: 20px;
+  padding: 0px;
+  margin: 0px;
+  width: 70%;
+  
+}
+.footer-top .container .row{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    
+    
+}
+.footer-top .footer-links .info{
+  border-left: none;
+}
+
+}
+
+
+
+
+
+@media(max-width:786px){
+.footer-top .footer-contact {
+  display: flex;
+  flex-direction: row;
+.info{
+  padding-top: 60px;
+}
+.social-links{
+  display: flex;
+  justify-content: end;
+  padding: 0px 60px;
+  
+}
+}
+
+ .footer-top .footer-links {
+  //margin-bottom: 20px;
+  padding: 0px;
+  margin: 0px;
+  width: 70%;
+  
+}
+.footer-top .container .row{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: center;  
+    
+}
+.footer-top .footer-links .info{
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-right: none;
+  padding-bottom: 20px;
+  margin-top: 20px;
+ 
+}
+
+.footer-top .footer-contact {
+ display: flex;
+ flex-direction: row;
+.info{
+  padding-top: 30px;
+}
+
+}
+.footer-explore h4{
+  text-align: center;
+  width : 80%
+}
+.footer-explore .explore{
+  display: flex;
+  justify-content: center;
+}
+.footer-explore .explore .links{
+  width : 30%;
+  //background-color: red;
+  padding-left: 0px;
+}
+
+
+
 }

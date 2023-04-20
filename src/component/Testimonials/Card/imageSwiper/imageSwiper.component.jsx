@@ -56,7 +56,7 @@ const ImageSwiper = () => {
   };
 
   const handleResize = () => {
-     if (window.innerWidth > 991) {
+ if (window.innerWidth > 991) {
       setSlidesToShow(2);
     } else if (window.innerWidth > 768) {
       setSlidesToShow(1);

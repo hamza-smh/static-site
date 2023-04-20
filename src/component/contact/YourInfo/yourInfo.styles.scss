@@ -22,10 +22,18 @@
   
   flex-direction: column;
   column-count: 2;
-  
 
+}
+
+@media(max-width: 1200px){
   
-    
-    
-    
+.aboutUser .yourInfo{
+  
+    margin:0px;
+    padding: 0%;
+  
+  flex-direction: column;
+  column-count: 1;
+
+}
 }
