@@ -12,9 +12,9 @@ const NavLinkBar = () =>{
             <NavItem nav_item= "About" scrollTo="#aboutUs"/>
             <NavItem nav_item= "Services" scrollTo="#services"/>
             <NavItem nav_item= "Portfolio" scrollTo="#portfolio"/>
-            <NavItem nav_item= "Testimonials" scrollTo="#testimonials"/>
+            <NavItem nav_item= "Testimonials" scrollTo="#test"/>
             <NavItem nav_item = "Careers" scrollTo="#careers"/>
-            <NavItem nav_item = "Contact Us" scrollTo="#contactUs"/>
+            <NavItem nav_item = "Contact Us" scrollTo="#contact"/>
             {/* <NavDropDown /> */}
             
             

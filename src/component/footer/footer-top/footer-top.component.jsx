@@ -18,9 +18,9 @@ const FooterTop = () => {
                                 <div className="info">
                                 <p>AMProtocolab is a leading software solution company that specializes in providing innovative and effective solutions to businesses of all sizes.</p>
                                 <div className="social-links mt-3">
-                                <a href=""><FaTwitter className="img-fluid" /></a>
-                                <a href=""><FaFacebookF className="img-fluid" /></a>
-                                <a href=""><FaLinkedin className="img-fluid" /></a>
+                                    <a href=""  className="twitter"><FaTwitter className="img-fluid"/></a>
+                                    <a href="" className="facebook"><FaFacebookF className="img-fluid" /></a>
+                                    <a href="" className="linkedin"><FaLinkedin className="img-fluid" /></a>
                                 </div>
                                 </div>
                     </div>
