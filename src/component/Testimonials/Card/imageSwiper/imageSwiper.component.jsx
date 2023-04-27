@@ -31,6 +31,32 @@ const ImageSwiper = () => {
     // };
 
 
+
+//appendDots: (dots) => (
+    //   <div
+    //     style={{
+    //       backgroundColor: "#ddd",
+    //       borderRadius: "10px",
+    //       padding: "1px",
+    //     }}>
+    //     <ul style={{ margin: "0px" }}> {dots} </ul>
+    //   </div>
+    // ),
+    // customPaging: (i) => (
+    //   <div
+    //     style={{
+    //       width: "30px",
+    //       color: "blue",
+    //       border: "5px blue solid",
+    //       height: "1px",
+    //     }}>
+    //     {i + 1}
+    //   </div>
+    // ),
+
+
+
+
   const [slidesToShow, setSlidesToShow] = useState(1);
 
   const settings = {
@@ -42,15 +68,37 @@ const ImageSwiper = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
-    appendDots: dash => (
+    // appendDots: dash => (
+    //   <div
+    //     style={{
+    //       backgroundColor: "red",
+    //       borderRadius: "0px",
+    //       padding: "0px"
+    //     }}
+    //   >
+    //     <ul style={{ margin: "0px" }}> {dash} </ul>
+    //   </div>
+    // ),
+    appendDots: (dots) => (
       <div
         style={{
-          backgroundColor: "red",
+          backgroundColor: "transparent",
           borderRadius: "0px",
-          padding: "0px"
-        }}
-      >
-        <ul style={{ margin: "0px" }}> {dash} </ul>
+          padding: "0px",
+        }}>
+        <ul style={{ margin: "10px" }}> {dots} </ul>
+      </div>
+    ),
+
+    customPaging: (i) => (
+      <div
+        style={{
+          width: "30px",
+          color: "transparent",
+          border: "2px #ffffff7a solid",
+          height: "1px",
+        }}>
+        {i + 1}
       </div>
     ),
   };

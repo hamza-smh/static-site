@@ -4,7 +4,7 @@ import background from "../../brand/assets/https_/lottiefiles.com/background-con
 import GetStartedButton from "../get-started-button/getStartedbutton";
 import Navigation from "../navigation/navigation";
 import {AiOutlinePlayCircle} from "react-icons/ai";
-
+import React from "react";
 // const Container = () => {
 // return(
 //     <div className="contain" id="contain">
