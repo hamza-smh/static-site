@@ -10,13 +10,9 @@ export const feature = [
     {
         title: "SuperScrapper",
     },
-    {
-        title: "Analyticsea"
-    },
     // {
-    //     title: "Hack Facebook",
-    // }, {
-    //     title: "Twitter Twin",
+    //     title: "Analyticsea"
     // },
+    
 ];
     
