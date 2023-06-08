@@ -7,9 +7,9 @@ import "./footer.styles.scss";
 const Footer = () => {
     return(
         <footer>
-            <NewsLetter />
+            {/* <NewsLetter /> */}
             <FooterTop />
-            <FooterBottom />
+            {/* <FooterBottom /> */}
         </footer>
     )
 }

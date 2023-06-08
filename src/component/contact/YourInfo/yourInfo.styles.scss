@@ -1,0 +1,39 @@
+.form-group{
+    
+}
+
+.form-group .form-control{
+    border-radius: 15px !important;
+    padding: 25px !important;
+     
+}
+
+
+.form-group ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(0,0,0,0.40);
+  opacity: 1; /* Firefox */
+  width: 100%;
+}
+
+.aboutUser .yourInfo{
+  
+    margin:0px;
+    padding: 0%;
+  
+  flex-direction: column;
+  column-count: 2;
+
+}
+
+@media(max-width: 1200px){
+  
+.aboutUser .yourInfo{
+  
+    margin:0px;
+    padding: 0%;
+  
+  flex-direction: column;
+  column-count: 1;
+
+}
+}

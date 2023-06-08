@@ -20,20 +20,25 @@ $blue : #449dd4;
       cursor: pointer;
       font-size: 16px;
       font-weight: 500;
-      //width: fit-content;
       text-decoration: none;
       color:$light-color;
+      justify-content: center;
       width: 100%;
     }
     .nav-item{
       height: 100%;
       padding : 10px 0px;
     }
+
 }
 
 
 @media(max-width:991px){
-  .nav-item .nav-link{
-    color: black;
+  .navlinkBar :hover {
+    background-color: rgb(23, 32, 48);
+  
+  .nav-link {
+    font-weight: 700;
+    font-size: 16.5px;
   }
-}
+}}

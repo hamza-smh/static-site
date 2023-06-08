@@ -1,0 +1,114 @@
+.why-us .card{
+    background-color: transparent;
+    border: 0px transparent;
+    align-items: stretch;
+    display: flex;
+    padding:0px 15px;
+    
+}
+.why-us .card .icon-box {
+  
+  padding: 50px 20px;
+  transition: all ease-in-out 0.4s;
+  background: transparent;
+  border-radius: 10px;
+  height:90%;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+ .why-us .icon-box .icon {
+  margin-bottom: 30px;
+  width: fit-content;
+
+
+
+}
+
+.why-us .icon-box .icon img {
+  background-color: #1D3557;  
+  border-radius: 50px;
+  padding: 10px 10px;
+  transition: 0.3s;
+  position: relative;
+  width:40px;
+  height:40px;
+}
+
+.why-us .icon-box h4 {
+  font-weight: 500;
+  margin: 0px 15px 15px 0px;
+  font-size: 18px;
+  text-align: start;
+
+}
+
+.why-us .icon-box h4 a {
+  color:black;
+  transition: ease-in-out 0.3s;
+}
+
+.why-us .icon-box p {
+  line-height: 18.75px;
+  font-size: 16px;
+  margin-bottom: 0;
+  text-align: justify;
+  
+}
+
+.why-us .icon-box:hover {
+  //transform: translateY(-10px);
+  transform:scale(1.1);
+}
+
+.why-us .icon-box:hover h4 a {
+ 
+  color:#1D3557;
+ 
+}
+
+.why-us .icon-box:hover p {
+  font-weight: 600;
+  color:#1D3557;
+ 
+}
+.why-us .icon-box:hover .icon img{
+  background-color: #084292;
+}
+
+
+@media(max-width : 991px){
+
+
+.why-us .icon-box p {
+  line-height: 18.75px;
+  font-size: 16px;
+  margin-bottom: 0;
+  text-align: justify;
+
+  // white-space: nowrap;
+  // overflow: hidden;
+  // text-overflow: ellipsis;
+
+  // font-size: 1.1em;
+  // margin-bottom: 10px;
+  // white-space: pre-wrap;
+  // word-wrap: break-word;
+}
+}
+@media(max-width : 768px){
+
+  .why-us .card .icon-box {
+    padding: 20px 0px;
+  }
+
+  .why-us .icon-box .icon {
+  margin-bottom: 15px;
+  width: fit-content;
+
+
+
+}
+}

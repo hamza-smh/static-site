@@ -4,14 +4,15 @@ import "./getstarted.styles.scss";
 const BUTTON_STYLE_CLASSES = {
     transparent: 'transparent',
     inverted   : "inverted",
-    transblue : "transblue",
+    solid : "solid",
+    normal: "normal"
 
 
 }
-const GetStartedButton = ({buttonType}) =>{
+const GetStartedButton = ({buttonType,buttonText}) =>{
     return(
         
-             <button className = {`button ${BUTTON_STYLE_CLASSES[buttonType]}`} > Get Started </button>
+             <button className = {`button ${BUTTON_STYLE_CLASSES[buttonType]}`} > {buttonText} </button>
     );
 
 }

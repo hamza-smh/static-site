@@ -1,26 +1,32 @@
 .clients{    
-    background-color:#eceef4;
-    height: 6rem;
+    background-color:#F1FAEE !important;
+    
+    height: 10rem;
     padding: 10px 90px 0px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
     
-    
+}
+.clients h4{
+    text-align: center;
 }
 
 .trail{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 5px 0;
+    //padding: 5px 0;
+    width:80%;
     text-align: center;
+    
 }
 .img-fluid{
-    max-width: 45%;
+    max-width: 60%;
     transition: all 0.4s ease-in-out;
     display: inline-block;
     padding: 8% 0px;
-    filter: grayscale(100);
+   
 }
 .img-fluid:hover {
   filter: none;
@@ -35,12 +41,16 @@
 
 
 @media (max-width: 991px){
-
+.clients{
+        height: 13rem !important;
+        background-color: red;
+}
 .trail{
     display : grid;
     grid-template-columns: repeat(3,1fr);
     column-gap: 0px;
-    row-gap: 0px;   
+    row-gap: 0px;  
+        //height: 12rem; 
     
 }
 .brand-names{

@@ -1,84 +1,204 @@
+#services{
+  background-color: #1d3557d9 ;
+  overflow: visible;
+  padding: 0px;
+  height:110vh;
+  
+  
+}
+#serviceImage{
+    mix-blend-mode: multiply;
+    height:110vh;
+    width: 100%;
+    position: absolute;
+}
 .services .container{
   display: flex;
   flex-direction: column;
   padding: 0px;
   align-items: center;
+  position: relative;
 }
+.services .container .buttons{
+  width: 35%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
 .services .container .section-title{
   width: 100%;
 }
-.section-title h2{
+.services .container .section-title h2{
   width: 100%;
-  
+  color:#fff;
+  margin-top: 48px;
+}
+.services .section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 450px;
+  height: 1px;
+  background: #fff;
+  bottom: 5px;
+  left: calc(35% - 60px);
+}
+
+.services .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: none;
+  width: 40px;
+  height: 3px;
+  background: #457B9D;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title p{
+  color:#fff;
+ // width: 60%;
+padding: 0px 200px;
+
 }
 .row-service{
   display: flex;
   flex-direction: start;
   width: 100%;
-  justify-content: baseline;
+  justify-content: center;
   padding: 0px;
 }
+
+
+
+
 @media(max-width:991px){
+  #services{
+    //overflow: scroll;
+    height: 130vh;
+    width: 100%;
+    padding: 0px !important;
+  }
+
+  #serviceImage{
+    //overflow: scroll;
+    height: 130vh;
+    width :100%
+  }
  .services .container{
-  box-sizing: content-box;
+  //box-sizing: content-box;
   flex-direction: column;
   padding: 0px;
+  //margin: 0px 120px;
   align-items: center;
+  overflow: hidden;
+  //width: 90%;
+  position: relative;
 } 
  .row-service{
   display: grid;
-grid-template-columns:  1fr 1fr;  
-column-gap: 0px;
-width: 100%;
+  grid-template-columns:  1fr 1fr 1fr;  
+  column-gap: 0px;
+  width: 100%;
 } 
+
+
+.section-title p{
+  padding: 0px;
+}
+
+.services .section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 350px;
+  height: 1px;
+  background: #fff;
+  bottom: 5px;
+  left: calc(35% - 70px);
+  background-size: cover;
+  overflow: hidden;
+}
+  .services .container .buttons{
+  width: 65%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.services .container .buttons button{
+ 
+  margin: 0px 5px;
+ 
+}
+
+
 }
 @media(max-width: 786px){
+  .row-service{
+  display: grid;
+  grid-template-columns:  1fr 1fr;  
+  column-gap: 0px;
+  width: 100%;
+}
+  #services{
+    //overflow: scroll;
+    height: 160vh;
+    width: 100%;
+    padding: 0px !important;
+  }
+
+  #serviceImage{
+    //overflow: scroll;
+    height: 160vh;
+    width :100%
+  }
+  .services .container .buttons{
+  width: 65%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.services .container .buttons button{
+ 
+  margin: 0px 5px;
+ 
+}
+
+
+}
+@media(max-width : 556px){
   .row-service{
   display: grid;
   grid-template-columns:  1fr ;  
   column-gap: 0px;
   width: 100%;
-} 
+}
+  #services{
+    //overflow: scroll;
+    height: 250vh;
+    width: 100%;
+    padding: 0px !important;
+  }
+
+  #serviceImage{
+    //overflow: scroll;
+    height: 250vh;
+    width :100%
+  }
+  .services .container .buttons{
+  width: 65%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.services .container .buttons button{
+ 
+  margin: 0px 5px;
+ 
 }
 
-// .services .icon-box {
-//   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-//   padding: 50px 30px;
-//   transition: all ease-in-out 0.4s;
-//   background: #fff;
-// }
 
-// .services .icon-box .icon {
-//   margin-bottom: 10px;
-// }
-
-// .services .icon-box .icon i {
-//   color: #47b2e4;
-//   font-size: 36px;
-//   transition: 0.3s;
-// }
-
-// .services .icon-box h4 {
-//   font-weight: 500;
-//   margin-bottom: 15px;
-//   font-size: 24px;
-// }
-
-// .services .icon-box h4 a {
-//   color: #37517e;
-//   transition: ease-in-out 0.3s;
-// }
-
-// .services .icon-box p {
-//   line-height: 24px;
-//   font-size: 14px;
-//   margin-bottom: 0;
-// }
-
-// .services .icon-box:hover {
-//   transform: translateY(-10px);
-// }
-
-// .services .icon-box:hover h4 a {
-//   color: #47b2e4;
-// }
+}

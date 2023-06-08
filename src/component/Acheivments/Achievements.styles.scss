@@ -1,0 +1,47 @@
+.achievements .row{
+    
+    justify-content: center;
+
+}
+
+.achievements h2{
+    margin:0px;
+    padding: 0px;
+    text-align: center;
+    border: none;
+    color:#000;
+    text-transform: none;
+    font-weight: 800;
+}
+
+
+.achievements p{
+color: rgb(1,1,1,0.85);
+margin:20px 0px 0px;
+font-size: 20px;
+
+}
+
+
+.achievements .section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 500px;
+  height: 1px;
+  background: #457B9D;
+  bottom: -5px;
+  left: calc(30% - 20px);
+  
+}
+
+.achievements .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: none;
+  width: 40px;
+  height: 3px;
+  background: #457B9D;
+  bottom: 0;
+  left: calc(50% - 20px);
+}

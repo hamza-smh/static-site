@@ -49,17 +49,26 @@ $blue : #449dd4;
   
   
   .navLinkBar .navlinkBar {
-    display: block;
-    flex-direction: column;
-    
-    width: 95%;
-    height: fit-content;
-    background-color: #fff;
-    
-    border-radius: 20px;
-    top: 60px;
-    left: 20px;
+    // display: block;
+    // flex-direction: column;
+    // width: 95%;
+    // height: fit-content;
+    // background-color: #fff;
+    // border-radius: 20px;
+    // top: 60px;
+    // left: 20px;
 
+    display:inline-block;
+    flex-direction: column;
+    width: 35%;
+    height: fit-content;
+   // background-color: #fff;
+    border-radius: 20px;
+    position: fixed;
+    top: 60px;
+    left:60%;
+   
+  
     .show{
       display: none;
     }
@@ -78,9 +87,8 @@ $blue : #449dd4;
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(40, 58, 90, 0.9);
-  color: $blue;
-  transition: 0.3s;
+  background: rgba(40, 58, 90, 0.871);
+  transition: 0.5s;
   z-index: 999;
 }
 
@@ -94,7 +102,6 @@ $blue : #449dd4;
   padding: 10px 10px ;
   margin:10px;
   border-radius: 10px;
-  background-color: $light-color;
   overflow-y: auto;
   transition: 0.3s;
 
@@ -102,18 +109,20 @@ $blue : #449dd4;
   height : 85%;
   
 }
-.collapse .navlinkBar .nav-item .nav-link{
-  font-size: 16px;
-  color: $theme;
-  width : 100%;
-  height : 20%;
-    &:hover {
-      color:$blue;
-    }
+// .collapse .navlinkBar .nav-item .nav-link{
+//   font-size: 16px;
+//   color: $theme;
+//   background-color: red;
+//   width : 100%;
+//   height : 20%;
+//     &:hover {
+//      // color:$blue;
+      
+//     }
 
 
-    text-align: center;
-}
+//     text-align: center;
+// }
 .collapse .navlinkBar .nav-item .dropdown .nav-link{
     align-items: center;
 }
@@ -129,7 +138,7 @@ $blue : #449dd4;
 
 
 .button{
-  width: 100%;
+  //width: fit-content;
    &.transparent {
         background-color: transparent;
         color: $theme;
@@ -160,6 +169,7 @@ $blue : #449dd4;
 .collapse-mobile .active,
 .collapse-mobile li:hover>a {
   color: #47b2e4;
+ 
 }
 
 .collapse-mobile .getstarted,

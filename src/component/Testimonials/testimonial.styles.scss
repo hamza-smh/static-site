@@ -1,0 +1,46 @@
+.test{
+    background-color: #E63946; 
+}
+.test .container .row-test{
+    display: flex;
+    flex-direction: row;    
+}
+
+.test .section-title p{
+    color:rgba(255, 255, 255, 0.65);
+    text-align: left;
+    padding: 20px 0px 0px;
+    font-size: 19px;
+    
+}
+.test h2{
+    margin:0px;
+    padding: 0px;
+    text-align: start;
+    border: none;
+    color:#fff;
+    text-transform: none;
+    font-weight: 800;
+}
+
+.test .section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 380px;
+  height: 1px;
+  background: #fff;
+  bottom: -5px;
+  left: calc(5% - 60px);
+}
+
+.test .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: none;
+  width: 40px;
+  height: 3px;
+  background: #457B9D;
+  bottom: 0;
+  left: calc(50% - 20px);
+}

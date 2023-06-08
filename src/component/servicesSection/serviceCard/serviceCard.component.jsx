@@ -8,7 +8,7 @@ const ServiceCard = ({data,index}) =>{
         <div className="card  ">
             <div className="icon-box">
                 <div className="icon">
-                    <i>{icon}</i>
+                    <img src={icon}  alt={title} /> 
                 </div>
                 <h4><a href="">{title}</a></h4>
                 <p>{text}</p>
