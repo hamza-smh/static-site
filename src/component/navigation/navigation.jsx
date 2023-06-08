@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import logo from 'F:/AMProtocol/project/my-app/src/brand/logo_transparent.png';
+import logo from "../../brand/logo-light.png";
 import "./navigation.styles.scss";
 import NavLinkBar from "./NavLinkBar/navLinkBar.component";
 import { FaBars } from "react-icons/fa";

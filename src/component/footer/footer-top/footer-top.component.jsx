@@ -2,7 +2,7 @@ import "./footer-top.styles.scss";
 import UsefulLink from "./usefulLinks/usefulLinks.component";
 import {FaTwitter , FaFacebookF , FaInstagram,FaLinkedin,FaSkype} from 'react-icons/fa';
 import { data, useful ,useful2 } from "./usefulLinks/links.component";
-import logo from "../../../brand/logo_transparent.png";
+import logo from "../../../brand/logo-light.png";
 import InfoBox from "./InfoBox/infoBox.component";
 
 const FooterTop = () => {
@@ -15,7 +15,7 @@ const FooterTop = () => {
                     <div className="footer-contact col-lg-4 col-mt-6">
               {/* col-lg-4 col-md-6                    */}
                                 <img className = "logo" src={logo}/>
-                                <div className="info">
+                                <div className="infoText">
                                 <p>AMProtocolab is a leading software solution company that specializes in providing innovative and effective solutions to businesses of all sizes.</p>
                                 <div className="social-links mt-3">
                                     <a href=""  className="twitter"><FaTwitter className="img-fluid"/></a>
