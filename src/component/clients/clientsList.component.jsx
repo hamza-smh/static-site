@@ -1,9 +1,9 @@
-import myob from "F:/AMProtocol/project/my-app/src/brand/assets/img/clients/myob.png";
-import belimo from "F:/AMProtocol/project/my-app/src/brand/assets/img/clients/belimo.png";
-import lifegroups from "F:/AMProtocol/project/my-app/src/brand/assets/img/clients/lifegroups.png";
-import lilly from "F:/AMProtocol/project/my-app/src/brand/assets/img/clients/lilly.png";
-import citrus from "F:/AMProtocol/project/my-app/src/brand/assets/img/clients/citrus.png";
-import trustly from "F:/AMProtocol/project/my-app/src/brand/assets/img/clients/trustly.png";
+import myob from "../../brand/assets/img/clients/myob.png";
+import belimo from "../../brand/assets/img/clients/belimo.png";
+import lifegroups from "../../brand/assets/img/clients/lifegroups.png";
+import lilly from "../../brand/assets/img/clients/lilly.png";
+import citrus from "../../brand/assets/img/clients/citrus.png";
+import trustly from "../../brand/assets/img/clients/trustly.png";
 
 
 export const allClients = [

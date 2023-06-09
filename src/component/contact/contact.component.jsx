@@ -2,7 +2,7 @@ import GetStartedButton from "../get-started-button/getStartedbutton";
 import "./contact.styles.scss";
 import YourInfo from "./YourInfo/yourInfo.component";
 import { yourInfo } from "./YourInfo/inputList.component";
-import Person from "../../brand/assets/https_/lottiefiles.com/man.png";;
+import Person from "../../brand/assets/https_/lottiefiles.com/contactUS.png";
 
 const Contact = () =>{
 

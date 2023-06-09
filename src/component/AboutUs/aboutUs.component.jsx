@@ -1,6 +1,3 @@
-// import WhyUsText from "./why-us-textList/whyUsText.component";
-// import whyus from "F:/AMProtocol/project/my-app/src/brand/assets/img/why-us.png";
-// import { useState } from "react";
 import "./aboutUs.styles.scss"
 import team from "./../../brand/assets/https_/lottiefiles.com/team.png";
 import GetStartedButton from "../get-started-button/getStartedbutton";

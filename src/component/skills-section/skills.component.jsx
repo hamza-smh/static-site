@@ -1,6 +1,6 @@
 import ProgressBar from "./progressBar/progressBar.component";
 import "./skills.styles.scss";
-import skills from "F:/AMProtocol/project/my-app/src/brand/assets/img/skills.png"
+import skills from "../../brand/assets/img/skills.png";
 const SkillSection = () => {
     return(
         <>
