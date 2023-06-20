@@ -2,13 +2,13 @@
   background-color: #1d3557d9 ;
   overflow: visible;
   padding: 0px;
-  height:110vh;
+  height:730px;
   
   
 }
 #serviceImage{
     mix-blend-mode: multiply;
-    height:110vh;
+    height:730px;
     width: 100%;
     position: absolute;
 }
@@ -21,7 +21,7 @@
 }
 .services .container .buttons{
   width: 35%;
-  padding-top: 20px;
+  padding: 20px 0px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -78,14 +78,14 @@ padding: 0px 200px;
 @media(max-width:991px){
   #services{
     //overflow: scroll;
-    height: 130vh;
+    height: 750px;
     width: 100%;
     padding: 0px !important;
   }
 
   #serviceImage{
     //overflow: scroll;
-    height: 130vh;
+    height: 750px;
     width :100%
   }
  .services .container{
@@ -124,7 +124,7 @@ padding: 0px 200px;
 }
   .services .container .buttons{
   width: 65%;
-  padding-top: 20px;
+  padding-top: 30px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -145,19 +145,21 @@ padding: 0px 200px;
 }
   #services{
     //overflow: scroll;
-    height: 160vh;
+    height: 900px;
     width: 100%;
     padding: 0px !important;
   }
 
   #serviceImage{
     //overflow: scroll;
-    height: 160vh;
+    height: 900px;
     width :100%
   }
   .services .container .buttons{
-  width: 65%;
-  padding-top: 20px;
+    
+  // width: 65%;
+  margin-top: 30px;
+  align-items: center;
   display: flex;
   justify-content: space-evenly;
 }
@@ -178,15 +180,28 @@ padding: 0px 200px;
 }
   #services{
     //overflow: scroll;
-    height: 250vh;
+    height: 1450px;
     width: 100%;
     padding: 0px !important;
   }
 
   #serviceImage{
     //overflow: scroll;
-    height: 250vh;
+    height: 1450px;
     width :100%
+  }
+  #services .section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 330px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(30% - 60px);
+}
+  .container .section-title p{
+    padding: 0px 30px
   }
   .services .container .buttons{
   width: 65%;

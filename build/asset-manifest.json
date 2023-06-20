@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2f75a091.css",
+    "main.js": "/static/js/main.1868f509.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/pexels-andrea-piacquadio-845451 1.png": "/static/media/pexels-andrea-piacquadio-845451 1.77064d5dd64a1e762e73.png",
+    "static/media/background-container.png": "/static/media/background-container.2a959f63de32c1cff4a7.png",
+    "static/media/contactUS.png": "/static/media/contactUS.33b2ba936b460d59e190.png",
+    "static/media/cta-bg.jpg": "/static/media/cta-bg.314069eaf3191d75946a.jpg",
+    "static/media/portfolio-2.jpg": "/static/media/portfolio-2.c082025dddeb09057e14.jpg",
+    "static/media/mobile.png": "/static/media/mobile.ddac0363f1449eabaa5a.png",
+    "static/media/portfolio-7.jpg": "/static/media/portfolio-7.a73da5d72b214ffa0637.jpg",
+    "static/media/AMP Logo-18.png": "/static/media/AMP Logo-18.60b9b92a8ea79a386d81.png",
+    "static/media/team.png": "/static/media/team.9cdb0c4b99c5069b01ed.png",
+    "static/media/team-2.jpg": "/static/media/team-2.b2008acdf74612d89b8f.jpg",
+    "static/media/skills.png": "/static/media/skills.d55a75f7c955e52bc346.png",
+    "static/media/team-1.jpg": "/static/media/team-1.30c859cd9a02bb5dcc9a.jpg",
+    "static/media/feature.png": "/static/media/feature.6f1db03938cea908e32e.png",
+    "static/media/team-3.jpg": "/static/media/team-3.ca581ae1628e295ec2a0.jpg",
+    "static/media/portfolio-8.jpg": "/static/media/portfolio-8.3c46c6c1343ceb2aeb74.jpg",
+    "static/media/team-4.jpg": "/static/media/team-4.525dee063b26d6a44d1d.jpg",
+    "static/media/portfolio-1.jpg": "/static/media/portfolio-1.f8a4f20b1b6d6ee85702.jpg",
+    "static/media/portfolio-9.jpg": "/static/media/portfolio-9.fbfa970774a6b6c830d0.jpg",
+    "static/media/portfolio-6.jpg": "/static/media/portfolio-6.84b78cea838c36fac922.jpg",
+    "static/media/portfolio-5.jpg": "/static/media/portfolio-5.940ac6c8dea7f45f338f.jpg",
+    "static/media/portfolio-3.jpg": "/static/media/portfolio-3.fc9e27e7017aebbcbf06.jpg",
+    "static/media/portfolio-4.jpg": "/static/media/portfolio-4.ab6a84ccac895007e9c3.jpg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "index.html": "/index.html",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "main.2f75a091.css.map": "/static/css/main.2f75a091.css.map",
+    "main.1868f509.js.map": "/static/js/main.1868f509.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f75a091.css",
+    "static/js/main.1868f509.js"
+  ]
+}

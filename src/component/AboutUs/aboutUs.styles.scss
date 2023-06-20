@@ -216,10 +216,14 @@
 
 
 
-#aboutUs .button{
-  width: 40%
+#aboutUs .content .button{
+  border:none;
+  width: fit-content
 }
 
+#aboutUs.content .button .explore{
+  width: fit-content
+}
 
 
 
@@ -273,20 +277,59 @@
 //   padding : 0px 20%;
 // }
 
-#aboutUs .button{
-  width: 20%
-}
 
 }
 
 
 @media (max-width: 765px) {
-  .why-us .img {
+  .row-container .img {
     min-height: fit-content;
-    min-width: 60%;
+  width: 100%;
     
   }
-  .why-us-img{
-    padding: 0px 10%;
+  .aboutUs-img{
+    padding: 0px;
+    margin:0px;
   }
+ #aboutUs .content .button{
+  //width: 100%;
+  display: flex;
+  padding: 10px 10px;
+  justify-content: space-evenly;
+}
+// #aboutUs.content .button .explore{
+//   width: 100%
+// }
+}
+
+@media (max-width: 575px) {
+ 
+#aboutUs .container-fluid{
+  padding:0px 0px 0px 20px
+}
+
+.aboutUs-text .content {
+  max-height: 100%;
+  //padding: 40px 100px 0 100px;
+  padding: 20px 30px !important;
+}
+  .row-container .img {
+    min-height: fit-content;
+    width: 100%;
+    
+  }
+  .aboutUs-img{
+    padding: 0px;
+    margin:0px;
+  }
+  
+
+ #aboutUs .content .button{
+  width: fit-content;
+  display: flex;
+  padding: 10px 10px;
+}
+// #aboutUs.content .button .explore{
+//   width: fit-content;
+// }
 }

@@ -34,7 +34,9 @@ return(
                         <p> 
                             Click onto our <strong>Portfolio</strong> to check them out.
                         </p>
-                        <GetStartedButton buttonType="solid" buttonText="Explore Now"/>
+                        <div className="button">
+                            <GetStartedButton className="explore" buttonType="solid" buttonText="Explore Now"/>
+                        </div>
                     </div>
                  
                 </div>

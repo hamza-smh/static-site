@@ -1,7 +1,7 @@
 .clients{    
     background-color:#F1FAEE !important;
     
-    height: 10rem;
+    height: 150px;
     padding: 10px 90px 0px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -42,8 +42,8 @@
 
 @media (max-width: 991px){
 .clients{
-        height: 13rem !important;
-        background-color: red;
+        height: 200px !important;
+
 }
 .trail{
     display : grid;
@@ -90,5 +90,33 @@
 .clients{
     height: 225px;
     padding: 0%;
+}
+}
+
+
+
+@media (max-width: 575px) {
+.trail{
+    display : grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 0px;
+    row-gap: 0px;     
+    max-height : max-content; 
+    padding: 0px 0px;    
+    height: fit-content;
+}
+.brand-names{
+    height: 60%;
+    width: 80%;
+    //padding: 1px;
+}
+.img-fluid{
+    //padding: 4% 0px;
+    width : 80%;
+    height: fit-content;
+}
+.clients{
+    height: 240px !important;
+    padding-top: 10px;
 }
 }
