@@ -45,3 +45,28 @@
   bottom: 0;
   left: calc(50% - 20px);
 }
+
+@media (max-width:991px){
+
+  .feature .section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 75%;
+  height: 2px;
+  background: #457B9D;
+  bottom: -5px;
+  left: calc(25% - 60px);
+}
+.feature .section-title p{
+
+    text-align: center;
+
+
+    
+}
+.feature h2{
+    text-align: center;
+
+} 
+}

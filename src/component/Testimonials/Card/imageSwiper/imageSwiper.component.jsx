@@ -86,7 +86,9 @@ const ImageSwiper = () => {
           borderRadius: "0px",
           padding: "0px",
         }}>
-        <ul style={{ margin: "10px" }}> {dots} </ul>
+        <ul style={{ margin: "10px" }}> 
+        {/* {dots} */}
+         </ul>
       </div>
     ),
 

@@ -26,35 +26,52 @@ font-size: 20px;
 .achievements .section-title h2::before {
   content: "";
   position: absolute;
-  display: block;
-  width: 500px;
+  display: flex;
+  width: 45%;
   height: 1px;
   background: #457B9D;
   bottom: -5px;
-  left: calc(30% - 20px);
+  left: calc(30% - 15px);
   
 }
 .section-title h2::after {
   content: "";
-  position: absolute;
   display: none;
-  width: 40px;
-  height: 3px;
-  background: #47b2e4;
-  bottom: 0;
-  left: calc(50% - 20px);
+
 }
 
-@media (max-width: 556px) {
- .achievements .section-title h2::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 350px;
-  height: 1px;
-  background: #457B9D;
-  bottom: -5px;
-  left: calc(17% - 20px);
+// @media (max-width: 991px) {
+//  .achievements .section-title h2::before {
+//   content: "";
+//   width: 500px;
+//   left: calc(17% - 20px);
   
-} 
-}
+// } 
+// }
+// @media (max-width: 768px) {
+//  .achievements .section-title h2::before {
+//   content: "";
+//   position: absolute;
+//   display: block;
+//   width: 350px;
+//   height: 1px;
+//   background: #457B9D;
+//   bottom: -5px;
+//   left: calc(17% - 20px);
+  
+// } 
+// }
+
+// @media (max-width: 556px) {
+//  .achievements .section-title h2::before {
+//   content: "";
+//   position: absolute;
+//   display: block;
+//   width: 350px;
+//   height: 1px;
+//   background: #457B9D;
+//   bottom: -5px;
+//   left: calc(17% - 20px);
+  
+// } 
+// }

@@ -58,7 +58,9 @@ const Contact = () =>{
                                 
                                 </label>
 
-                                <div><GetStartedButton buttonType="solid" buttonText="Submit" /></div>
+                                <div className="submit">
+                                    <GetStartedButton buttonType="solid" buttonText="Submit" />
+                                </div>
                             
                             </form>
                         </div>
