@@ -31,14 +31,14 @@ const PortfolioItem = ({data, index}) =>{
 
     
     return(
-        // <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+        
         <div className=" portfolio-item filter-app ">    
             <div className="portfolio-img"><img src={displayImage} className="img-fluid" alt=""/></div>
             <div className="portfolio-info ">
                 <h4>{groupTitle}</h4>
                 <p>{group}</p>
 
-                {/* <a href="assets/img/portfolio/{`${displayImage}`}.jpg" data-gallery="portfolioGallery"  */}
+        
 
                 <a onClick={toggleZoom} title="App 1"
                     className=" preview-link" >

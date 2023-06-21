@@ -3,7 +3,7 @@ import "./achievementsCard.styles.scss";
 const AchievementCard = ({data,index}) =>{
 
     const {title,icon,number}=data;
-    //col-xl-3 col-md-6
+    
     return(
 
         < div className = "card Achievement-Card " >

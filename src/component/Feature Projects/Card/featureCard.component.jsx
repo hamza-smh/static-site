@@ -6,7 +6,6 @@ import ImageSwiper from "./imageSwiper/imageSwiper.component";
 const FeatureCard = ({data,index}) =>{
 
     const {title}=data;
-    //col-xl-3 col-md-6
     return(
 
         <div className="card feature-Card ">

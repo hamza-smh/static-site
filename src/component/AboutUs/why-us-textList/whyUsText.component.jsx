@@ -1,6 +1,4 @@
 import {WhyUsBlock,Slider,Count,TextOutside,ChevronIcon,SliderIconButton} from "./whyUsText.styles";
-//import { useContext } from "react";
-//import { WhyUsContext } from "../../../context/whyus.context";
 import SliderIcon from "./sliderIcon/sliderIcon.component";
 
 
@@ -10,7 +8,6 @@ const WhyUsText = ({data, selected,setSelected,index}) =>{
    
         const Toggler = (optionId) => {
             if (selected === optionId) {
-                // if the selected option is clicked again, reset to default
                 setSelected("");
             } else {
                 setSelected(optionId);
@@ -43,7 +40,7 @@ const WhyUsText = ({data, selected,setSelected,index}) =>{
             </Slider>
             <>
                 {
-                    // selected===index ? <p>{textInside}</p> : null
+                    
                     selected===index ? <p>{textInside}</p> :null
                 } 
             </>

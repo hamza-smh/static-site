@@ -29,8 +29,6 @@
 }
 .test .card .icon-box .intro .user{
   display: flex;
-  
-  //flex-direction: row;
 }
 .test .card .icon-box .intro .apostrophe{
     display: flex;
@@ -60,9 +58,7 @@
   margin: 0px 0px 0px 30px;
   
   text-align: center;
-  //width: fit-content;
   height: fit-content;
-  //margin-left: 30px
 }
 
 .test .icon-box h4 a {
@@ -96,10 +92,7 @@
   padding-top: 5px;
   height: fit-content;
 }
-// .test .icon-box:hover {
-//   //transform: translateY(-10px);
-//   transform:scale(1.1);
-// }
+
 
 .test .card .button{
   border-radius: 7px;

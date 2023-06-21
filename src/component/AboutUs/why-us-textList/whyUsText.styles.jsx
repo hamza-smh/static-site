@@ -1,7 +1,5 @@
 import styled from "styled-components";
-// .why-us .accordion-list li+li {
-//   margin-top: 15px;
-// }
+
 export const TextOutside = styled.span `
   color: #343a40;
   font-weight: 600;
@@ -17,7 +15,7 @@ export const SliderIconButton = styled.button `
 `
 
 export const Slider = styled.a `
-  //padding: 5%;
+  
   display: inline-flex;
   position: relative;
   font-family: "Poppins", sans-serif;

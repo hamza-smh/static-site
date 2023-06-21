@@ -4,12 +4,6 @@ import GetStartedButton from "../get-started-button/getStartedbutton";
 
 const AboutUs = () => {
 
-    //const [selected, setSelected] = useState(0);
-    
-
-
-    
-
 return(
     <>
     <section id="aboutUs" className="aboutUs section-bg">

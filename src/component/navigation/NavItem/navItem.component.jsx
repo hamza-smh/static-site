@@ -1,30 +1,5 @@
-// import "./navItem.styles.scss";
-// import { NavLink } from "react-router-dom";
-
-// const NavItem = ({nav_item,scrollTo}) => {
-// return(
-//     <>
-//         <li className="nav-item"><a className="nav-link  "  href = {scrollTo} >{nav_item}</a></li>
-       
-//     </>
-// )
-// }
-// export default NavItem;
-
-
-//  {
-//      /* <li className="nav-item">
-//                  <NavLink 
-//                   //className="nav-link "  
-//                   //activeStyle={{ color:'#fff' }} 
-//                   to = {scrollTo} >
-//                      {nav_item}
-//                  </NavLink>
-//              </li> */
-//  }
 
 import "./navItem.styles.scss";
-import { NavLink } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 
 const NavItem = ({ nav_item, scrollTo }) => {

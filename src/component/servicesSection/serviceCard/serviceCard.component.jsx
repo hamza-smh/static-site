@@ -3,7 +3,7 @@ import "./serviceCard.styles.scss";
 const ServiceCard = ({data,index}) =>{
 
     const {title,icon,text}=data;
-    //col-xl-3 col-md-6
+    
     return(
         <div className="card  ">
             <div className="icon-box">

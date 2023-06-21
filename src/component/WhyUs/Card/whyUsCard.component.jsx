@@ -3,7 +3,6 @@ import "./whyUsCard.styles.scss";
 const WhyUsCard = ({data,index}) =>{
 
     const {title,icon,text}=data;
-    //col-xl-3 col-md-6
     return(
 
         <div className="card whyUs-Card ">

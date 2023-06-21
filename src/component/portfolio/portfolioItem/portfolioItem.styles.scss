@@ -6,10 +6,7 @@
 }
 
 .portfolio .portfolio-item .portfolio-img {
-  //margin: 0px;
   overflow: hidden;
-  
-  
 }
 
 .portfolio .portfolio-item .portfolio-img img {
@@ -27,17 +24,12 @@
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
   position: absolute;
-  //left: 15px;
   bottom: 0px;
-  //right: 15px;
   width: 94%;
-  //height: 100%;
   z-index: 3;
   transition: all 0.3s;
   background: rgba(55, 81, 126, 0.8);
   padding: 10px 15px;
-  
-  //float:inherit;  
 }
 
 .portfolio .portfolio-item:hover .portfolio-img img {
@@ -84,7 +76,6 @@
   transition: 0.3s;
   width: 20px;
   margin-right: 20px;
-//background-color: red;
   overflow: visible;
  cursor: pointer; 
   

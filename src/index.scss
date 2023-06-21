@@ -1,5 +1,4 @@
 $light-color: #f8f8f8;
-//$theme: rgb(70, 105, 145);
 $theme :rgb(55, 81, 126);
 $theme2 :rgb(18, 37, 70);
 $blue : #449dd4;
@@ -19,36 +18,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-// body {
-//   font-family: "Open Sans", sans-serif;
-//   color: #444444;
-// }
-
-// a {
-//   color: #47b2e4;
-//   text-decoration: none;
-// }
-
-// a:hover {
-//   color: #73c5eb;
-//   text-decoration: none;
-// }
-
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//   font-family: "Jost", sans-serif;
-// }
-
-
-
-
-
-  
         /* Designing for scroll-bar */
         ::-webkit-scrollbar {
             width: 15px;
@@ -57,13 +26,13 @@ code {
         /* Track */
         ::-webkit-scrollbar-track {
             background: $light-color;
-            //border-radius: 15px;
+
         }
      
         /* Handle */
         ::-webkit-scrollbar-thumb {
             background: $theme2;
-            //border-radius: 15px;
+
         }
      
         /* Handle on hover */

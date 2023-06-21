@@ -8,53 +8,7 @@ import TestimonialCard from '../testimonialCard.component';
 
 const ImageSwiper = () => {
 
-    // const settings = {
-    //     dots: true,
-    //     infinite: true,
-    //     speed: 1000,
-    //     slidesToShow: 2,
-    //     slidesToScroll: 1,
-    //     autoplay: true,
-    //     autoplaySpeed: 5000,
-    //     pauseOnHover: true,
-    //     appendDots: dash => (
-    //     <div
-    //       style={{
-    //         backgroundColor: "red",
-    //         borderRadius: "0px",
-    //         padding: "0px"
-    //       }}
-    //     >
-    //       <ul style={{ margin: "0px" }}> {dash} </ul>
-    //     </div>
-    //   ),
-    // };
-
-
-
-//appendDots: (dots) => (
-    //   <div
-    //     style={{
-    //       backgroundColor: "#ddd",
-    //       borderRadius: "10px",
-    //       padding: "1px",
-    //     }}>
-    //     <ul style={{ margin: "0px" }}> {dots} </ul>
-    //   </div>
-    // ),
-    // customPaging: (i) => (
-    //   <div
-    //     style={{
-    //       width: "30px",
-    //       color: "blue",
-    //       border: "5px blue solid",
-    //       height: "1px",
-    //     }}>
-    //     {i + 1}
-    //   </div>
-    // ),
-
-
+   
 
 
   const [slidesToShow, setSlidesToShow] = useState(1);
@@ -68,17 +22,6 @@ const ImageSwiper = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
-    // appendDots: dash => (
-    //   <div
-    //     style={{
-    //       backgroundColor: "red",
-    //       borderRadius: "0px",
-    //       padding: "0px"
-    //     }}
-    //   >
-    //     <ul style={{ margin: "0px" }}> {dash} </ul>
-    //   </div>
-    // ),
     appendDots: (dots) => (
       <div
         style={{

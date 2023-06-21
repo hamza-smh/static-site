@@ -9,7 +9,6 @@ $blue : #449dd4;
     height: 50px;
     display: flex;
     flex-direction: row;
-    //align-items: center;
     justify-content: flex-end;
     padding: 0px 0px 18px 0px;
     list-style-type: none;
@@ -30,7 +29,7 @@ $blue : #449dd4;
 
 
 
- //   display: none;
+ 
   }
   
  .navlinkBar .collapse{
@@ -38,7 +37,6 @@ $blue : #449dd4;
     height: 50px;
     display: flex;
     flex-direction: row;
-    //align-items: center;
     justify-content: flex-start;
     padding: 0px 0px 18px 0px;
     list-style-type: none;
@@ -49,20 +47,10 @@ $blue : #449dd4;
   
   
   .navLinkBar .navlinkBar {
-    // display: block;
-    // flex-direction: column;
-    // width: 95%;
-    // height: fit-content;
-    // background-color: #fff;
-    // border-radius: 20px;
-    // top: 60px;
-    // left: 20px;
-
     display:inline-block;
     flex-direction: column;
     width: 35%;
     height: fit-content;
-   // background-color: #fff;
     border-radius: 20px;
     position: fixed;
     top: 60px;
@@ -109,20 +97,7 @@ $blue : #449dd4;
   height : 85%;
   
 }
-// .collapse .navlinkBar .nav-item .nav-link{
-//   font-size: 16px;
-//   color: $theme;
-//   background-color: red;
-//   width : 100%;
-//   height : 20%;
-//     &:hover {
-//      // color:$blue;
-      
-//     }
 
-
-//     text-align: center;
-// }
 .collapse .navlinkBar .nav-item .dropdown .nav-link{
     align-items: center;
 }
@@ -138,7 +113,7 @@ $blue : #449dd4;
 
 
 .button{
-  //width: fit-content;
+
    &.transparent {
         background-color: transparent;
         color: $theme;
@@ -153,8 +128,6 @@ $blue : #449dd4;
 
 .collapse .mobile-nav-toggle {
   position: absolute;
-  // top: 15px;
-  // right: 15px;
 }
 
 

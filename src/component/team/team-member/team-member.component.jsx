@@ -5,7 +5,6 @@ const TeamMember = ({data,index}) =>{
     const {member,name,post,about} = data;
     
     return(
-    //    <div className="member-container col-lg-6">
     < div className = "member-container col-lg-6" >
             <div className="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
                 <div className="pic"><img src={member} className="img-fluid dp" alt=""/></div>

@@ -5,9 +5,6 @@
 .test .container .slick-slide{
     height:0px;   
 }
-// .test .container .slick-active{
-//     transform: scale(1.1);
-// }
 .test .container  .imageslide-container{
     height:150px;
     display: none;
@@ -21,7 +18,7 @@
 
 .test .container  .slick-slider .slick-dots{
     background-color: transparent !important;
-    //background-color: green !important;
+ 
     border-radius: 0% !important;
 
 }
@@ -35,7 +32,7 @@
     
 }
 .test .container  .slick-slider .slick-arrow{
-    // display:none !important;
+    
     transform: scale(2);
     position: absolute;
     
@@ -45,8 +42,6 @@
     
 }
 .test .container  .slick-slider .slick-dots ul li .slick-active div{
-
    background-color: #fff;
-  // border-radius: 25px;
 }
 

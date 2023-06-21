@@ -10,7 +10,6 @@ const FaqList =({data, selected,setSelected,index})=>{
 
     const Toggler = (optionId) => {
         if (selected === optionId) {
-            // if the selected option is clicked again, reset to default
             setSelected("");
         } else {
             setSelected(optionId);
@@ -21,11 +20,11 @@ const FaqList =({data, selected,setSelected,index})=>{
     return(
         <li className="faq-question">
             <a className="slider">
-                 <span onClick = {() => Toggler(index)}  //answer
+                 <span onClick = {() => Toggler(index)}  
                   className={selected === index? "active":""}> 
                     <span className="cover">
                         <i  className="mark"><BsQuestionCircle/></i>  
-                        {/* comment */}
+                       
                         {outerText}
                     </span>
 
@@ -42,29 +41,7 @@ const FaqList =({data, selected,setSelected,index})=>{
                 }  
               
             </a>
-            
         </li>
-
-
-
-
-
-
-        // <li data-aos="fade-up" data-aos-delay="100">
-        //     <span className="slider">
-        //         <BsQuestionCircle /> 
-        //         <a data-bs-toggle="collapse"  data-bs-target="#faq-list-1">
-        //             {outerText}
-        //             </a>
-        //         <a><BiChevronDown /><BiChevronUp /></a>    
-                
-                
-        //     </span>
-        //     <div id="faq-list-1"  data-bs-parent=".faq-list">
-        //         <p>{innerText}</p>
-        //     </div>
-        // </li>
-
     )
 }
 export default FaqList;

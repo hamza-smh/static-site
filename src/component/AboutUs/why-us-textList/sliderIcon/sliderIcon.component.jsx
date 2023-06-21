@@ -1,6 +1,6 @@
 import {useContext} from 'react';
 import {BiChevronUp,BiChevronDown} from 'react-icons/bi';
-//import {WhyUsContext} from '../../../../context/whyus.context';
+
 
 const SliderIcon = ({selected,index}) => {
     

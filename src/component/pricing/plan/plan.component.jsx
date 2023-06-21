@@ -3,9 +3,6 @@ import GetStartedButton from "../../get-started-button/getStartedbutton";
 import {FcCheckmark} from 'react-icons/fc';
 import {BiX} from "react-icons/bi";
 
-// const Disable = ({ active, children }) => (
-//   <i className={`FcCheckmark ${active ? "" : "BiX"}`}></i>
-// );
 
 
 
