@@ -25,13 +25,17 @@ code {
      
         /* Track */
         ::-webkit-scrollbar-track {
-            background: $light-color;
+            //background: $light-color;
+            background-color: #A8DADC;
+             background-image: linear-gradient(to bottom,#A8DADC6E, #fff);
+            
 
         }
      
         /* Handle */
         ::-webkit-scrollbar-thumb {
             background: $theme2;
+            
 
         }
      
