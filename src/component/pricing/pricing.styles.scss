@@ -1,10 +1,10 @@
-.pricing .container{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 0px;
-    justify-content: center;
-}
+// .pricing .container{
+//     display: flex;
+//     flex-direction: column;
+//     height: 100%;
+//     padding: 0px;
+//     justify-content: center;
+// }
 .pricing .row {
   padding-top: 40px;
   height: 100%;
@@ -14,6 +14,110 @@
   margin:0px;
   
 }
+
+.pricing .box {
+  padding: 60px 40px;
+  box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
+  background: #fff;
+  box-shadow: 0px 0px 1px black,1px 10px 10px rgb(121, 120, 120) ;
+  height: 100%;
+  border-top: 4px solid #fff;
+  border-radius: 5px;
+}
+
+
+.pricing h3 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #37517e;
+}
+
+.pricing h4 {
+  font-size: 48px;
+  color: #37517e;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  margin-bottom: 25px;
+}
+
+
+.pricing .custom{
+  margin-top: 50px;
+  text-align: center;
+  flex-direction: column;
+}
+.pricing .custom p{
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+
+}
+.pricing h4 sup {
+  font-size: 28px;
+}
+
+.pricing h4 span {
+  color: #47b2e4;
+  font-size: 18px;
+  display: block;
+}
+
+
+
+
+
+
+.pricing .container{
+    display: flex;
+    flex-direction: column;
+    padding :0px ;
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    
+    
+}
+
+.pricing .container .section-title{
+  max-width: 100%;
+
+  h2{
+    color:#000;
+    text-transform: none;
+    font-weight: 900;
+  }
+  p{
+    color: rgb(0,0,0,0.65);
+    font-weight: 600;
+    font-size: 21px;
+    padding: 0px 45px;
+
+  }
+}
+
+
+.pricing .section-title h2::before ,
+.pricing .section-title h2::after {
+  content: "";
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width:991px){
   .pricing .row {

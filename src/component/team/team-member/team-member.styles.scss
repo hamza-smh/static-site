@@ -11,6 +11,10 @@
   border-radius: 5px;
   background: #fff;
   transition: 0.5s;
+  display:"flex";
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   
 }
 
@@ -18,6 +22,8 @@
   overflow: hidden;
   width: 180px;
   border-radius: 50%;
+  height: 180px;
+  margin-bottom: 20px
 }
 
 .member .pic .dp {
@@ -32,7 +38,8 @@
 }
 
 .member .member-info {
-  padding-left: 30px;
+  //padding-left: 30px;
+  justify-content: center;
 }
 
 .member h4 {
@@ -40,6 +47,7 @@
   margin-bottom: 5px;
   font-size: 20px;
   color: #37517e;
+  text-align: center;
 }
 
 .member span {
@@ -48,17 +56,19 @@
   padding-bottom: 10px;
   position: relative;
   font-weight: 500;
+  text-align: center;
 }
 
 .member span::after {
   content: "";
   position: absolute;
   display: block;
-  width: 50px;
+  width: 80%;
   height: 1px;
   background: #cbd6e9;
   bottom: 0;
-  left: 0;
+  left: 15%;
+  justify-content: center;
 }
 
 .member p {
@@ -70,7 +80,7 @@
   margin-top: 12px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .member .member-info .social a {

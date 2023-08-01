@@ -1,4 +1,5 @@
 import "./getstarted.styles.scss";
+import { Link } from 'react-router-dom';
 
 
 const BUTTON_STYLE_CLASSES = {
@@ -9,11 +10,14 @@ const BUTTON_STYLE_CLASSES = {
 
 
 }
-const GetStartedButton = ({buttonType,buttonText}) =>{
-    return(
-        
-             <button className = {`button ${BUTTON_STYLE_CLASSES[buttonType]}`} > {buttonText} </button>
-    );
+const GetStartedButton = ({ buttonType, buttonText, linkTo }) => {
+  return (
+    <Link to={linkTo}>
+      <button className={`button ${BUTTON_STYLE_CLASSES[buttonType]}`}>
+        {buttonText}
+      </button>
+    </Link>
+  );
+};
 
-}
 export default GetStartedButton;

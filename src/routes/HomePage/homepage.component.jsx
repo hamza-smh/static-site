@@ -13,7 +13,6 @@ import Testimonial from "../../component/Testimonials/testimonial.component";
 import CTASection from "../../component/ctaSection/ctaSection.component";
 import Portfolio from "../../component/portfolio/portfolio.scomponent";
 import Team from "../../component/team/team.component";
-import Pricing from "../../component/pricing/pricing.component";
 import FAQ from "../../component/faq/faq.component";
 import Contact from "../../component/contact/contact.component";
 import Footer from "../../component/footer/footer.component";
@@ -37,7 +36,7 @@ const HomePage =() =>{
             {/* <CTASection /> */}
              {/* <Portfolio /> */}
             {/* <Team /> */}
-            {/* <Pricing /> */}
+            
             {/* <FAQ /> */}
             <Contact />
             <Footer /> 
