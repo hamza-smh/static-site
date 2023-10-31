@@ -1,7 +1,8 @@
 export const yourInfo = [{
         placeholder: "Full Name* ",
         type: "text",
-        need : true
+        need : true,
+        
     },
 
     {

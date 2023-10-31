@@ -26,7 +26,7 @@ const TestimonialCard = ({data,index}) =>{
                         <div className="rating">    
                             {
                                 ratingStars.map((star, index) => (
-                                     <BsStarFill className="star"/>
+                                     <BsStarFill key={index} className="star"/>
                                 ))
                             }    
                         </div>   
